@@ -1,5 +1,7 @@
 <template>
-  <div v-if="error" :class="classes" class="text-red-500 absolute top-3 right-0">{{ errorMessage }}</div>
+  <div v-if="error" :class="classes" class="text-red-700 absolute top-3 right-0">
+    {{ errorMessage }}
+  </div>
 </template>
 <script setup>
 import { computed } from 'vue';

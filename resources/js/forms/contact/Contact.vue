@@ -9,38 +9,43 @@
       Bitte überprüfen Sie die eingegebenen Daten.
     </error-alert>
   </template>
-  <form @submit.prevent="submitForm">
-    <div>
-      <form-group>
+  <form @submit.prevent="submitForm" class="max-w-4xl">
+    <h2 class="text-forest text-lg md:text-xl lg:text-2xl">
+      Kontaktformular
+    </h2>
+    <p class="text-xs md:text-sm lg:text-md uppercase text-forest">
+      <strong>Ich interessiere mich für (bitte auswählen):</strong>
+    </p>
+    <div class="mt-3 lg:mt-6">
+      <form-group class="flex flex-col gap-y-3 lg:gap-y-6">
         <form-checkbox
-          v-model="form.apartment_1_5"
-          :error="errors.apartments"
-          @update:error="errors.apartments = $event"
+          v-model="form.interest"
+          :error="errors.interest"
+          @update:error="errors.interest = $event"
           id="apartment-1-5"
-          name="apartment_1_5"
+          name="interest[]"
           label="1.5-Zimmerwohnung"
+          value="1.5-Zimmerwohnung"
         />
-      </form-group>
-      <form-group>
         <form-checkbox
-          v-model="form.apartment_2_5"
-          :error="''"
+          v-model="form.interest"
+          :error="errors.interest ? ' ' : ''"
           id="apartment-2-5"
-          name="apartment_2_5"
+          name="interest[]"
           label="2.5-Zimmerwohnung"
+          value="2.5-Zimmerwohnung"
         />
-      </form-group>
-      <form-group>
         <form-checkbox
-          v-model="form.apartment_3_5"
-          :error="''"
+          v-model="form.interest"
+          :error="errors.interest ? ' ' : ''"
           id="apartment-3-5"
-          name="apartment_3_5"
+          name="interest[]"
           label="3.5-Zimmerwohnung"
+          value="3.5-Zimmerwohnung"
         />
       </form-group>
     </div>
-    <div>
+    <div class="md:grid md:grid-cols-2 md:gap-x-20">
       <form-group>
         <form-text-field
           v-model="form.firstname"
@@ -58,7 +63,7 @@
         />
       </form-group>
     </div>
-    <div>
+    <div class="md:grid md:grid-cols-2 md:gap-x-20">
       <form-group>
         <form-text-field
           v-model="form.street"
@@ -76,7 +81,7 @@
         />
       </form-group>
     </div>
-    <div>
+    <div class="md:grid md:grid-cols-2 md:gap-x-20">
       <form-group>
         <form-text-field
           type="email"
@@ -109,7 +114,7 @@
     <form-group>
       <form-button
         type="submit"
-        :label="'ABSENDEN'"
+        :label="'Absenden'"
         :disabled="isSubmitting"
         :submitting="isSubmitting"
       />
@@ -140,21 +145,19 @@ onMounted(() => {
 });
 
 const form = ref({
-  apartment_1_5: false,
-  apartment_2_5: false,
-  apartment_3_5: false,
-  name: null,
-  firstname: null,
-  phone: null,
-  street: null,
-  location: null,
-  email: null,
-  privacy: false,
+  interest: ['1.5-Zimmerwohnung'],
+  name: 'Muster',
+  firstname: 'Max',
+  phone: '079 123 45 67',
+  street: 'Musterstrasse 1',
+  location: '8000 Zürich',
+  email: 'test@example.com',
+  privacy: true,
   website: ''
 });
 
 const errors = ref({
-  apartments: '',
+  interest: '',
   name: '',
   firstname: '',
   street: '',
@@ -191,9 +194,7 @@ async function submitForm() {
 
 function handleSuccess() {
   form.value = {
-    apartment_1_5: false,
-    apartment_2_5: false,
-    apartment_3_5: false,
+    interest: [],
     name: null,
     firstname: null,
     street: null,
@@ -205,7 +206,7 @@ function handleSuccess() {
   };
 
   errors.value = {
-    apartments: '',
+    interest: '',
     name: '',
     firstname: '',
     street: '',

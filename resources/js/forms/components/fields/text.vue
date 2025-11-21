@@ -5,9 +5,10 @@
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
       @focus="$emit('update:error', '')"
+      class="w-full bg-white !ring-0 !border-0 !outline-0 text-forest placeholder:text-forest px-5 py-5 lg:px-10"
       :placeholder="placeholderText"
       :class="[
-        { '!border-red-500 placeholder:!text-red-500': errorMessage },
+        { 'placeholder:!text-red-700': errorMessage },
       ]"
     >
   </div>

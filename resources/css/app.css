@@ -8,22 +8,24 @@
 
 
 @theme {
+
   --color-forest: #003934;
   --color-dew: #BDCD9A;
 
   --font-bebas-neue-pro: 'bebas-neue-pro', sans-serif;
   --font-bebas-neue-pro-bold: 'bebas-neue-pro', sans-serif;
 
-  --text-xxxs: 0.625rem; /* 10px */
-  --text-xxs: 0.75rem; /* 12px */
-  --text-xs: 0.875rem; /* 14px */
-  --text-sm: 1rem; /* 16px */
-  --text-md: 1.125rem; /* 18px */
-  --text-lg: 1.25rem; /* 20px */
-  --text-xl: 1.5rem; /* 24px */
-  --text-2xl: 1.75rem; /* 28px */
-  --text-3xl: 2.5rem; /* 40px */
-  --text-4xl: 4rem; /* 64px */
+  --text-xxs: 0.875rem; /* 14px */
+  --text-xs: 1rem; /* 16px */
+  --text-sm: 1.125rem; /* 18px */
+  --text-md: 1.375rem; /* 22px */
+  --text-lg: 1.625rem; /* 26px */
+  --text-xl: 1.75rem; /* 28px */
+  --text-2xl: 2.5rem; /* 40px */
+
+  --text-3xl: 3rem; /* 48px */
+  --text-4xl: 4.5rem; /* 72px */
+  --text-5xl: 5.25rem; /* 84px */
 
   --spacing-0: 0rem;
   --spacing-1: 0.0625rem;
@@ -279,10 +281,43 @@
 }
 
 h1, h2, h3 {
-  @apply font-bebas-neue-pro-bold font-semibold text-dew uppercase;
+  @apply font-bebas-neue-pro-bold font-semibold uppercase tracking-wide;
+}
+
+h1 {
+  @apply mb-5 lg:mb-15
+}
+
+h2 {
+  @apply lg:mb-5
 }
 
 strong {
   @apply font-bebas-neue-pro-bold font-semibold;
 }
-  
+
+p {
+  @apply tracking-wide;
+}
+
+p:not(:last-of-type){
+  @apply mb-16 lg:mb-20;
+}
+
+main ul {
+  @apply mb-16 lg:mb-20 ml-20;
+}
+
+main li {
+  @apply mb-5 list-item list-disc
+}
+
+.grecaptcha-badge {
+  @apply !hidden;
+}
+
+
+/* Honeypot field */
+input[name="website"] {
+  @apply !hidden !absolute !left-0 !top-0 !w-0 !h-0 overflow-hidden !opacity-0 pointer-events-none
+}

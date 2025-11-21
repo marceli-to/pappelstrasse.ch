@@ -108,7 +108,7 @@ class MapboxMap {
     for (const feature of GEOJSON_DATA.features) {
       const el = document.createElement('div');
       el.className = 'marker';
-      el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.8 52.8" width="41" height="53"><path d="M40.8,20.4A20.4,20.4,0,0,0,0,20.4C0,31.7,20.4,52.8,20.4,52.8S40.8,31.7,40.8,20.4ZM10.9,20a9.5,9.5,0,1,1,9.5,9.5A9.6,9.6,0,0,1,10.9,20Z" fill="#142532"/></svg>`;
+      el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.8 52.8" width="41" height="53"><path d="M40.8,20.4A20.4,20.4,0,0,0,0,20.4C0,31.7,20.4,52.8,20.4,52.8S40.8,31.7,40.8,20.4ZM10.9,20a9.5,9.5,0,1,1,9.5,9.5A9.6,9.6,0,0,1,10.9,20Z" fill="#003934"/></svg>`;
 
       new mapboxgl.Marker({ element: el, anchor: 'bottom' })
         .setLngLat(feature.geometry.coordinates)
