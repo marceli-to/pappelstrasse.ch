@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
 
-  <div class="bg-forest text-white">
+  <div class="bg-forest text-white -mt-1">
 
     <x-layout.inner>
 
