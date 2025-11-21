@@ -11,7 +11,7 @@
         :required="required"
         type="checkbox"
         @change="handleChange"
-        class="shrink-0 w-14 lg:w-16 h-14 lg:h-16 bg-white accent-forest appearance-none border border-forest checked:bg-white relative checked:bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27%23003934%27%20stroke-width=%273%27%3E%3Cpath%20d=%27M20%206L9%2017L4%2012%27/%3E%3C/svg%3E')] checked:bg-center checked:bg-no-repeat checked:bg-[length:14px]"
+        class="shrink-0 w-14 lg:w-16 h-14 lg:h-16 -mt-1 bg-white accent-forest appearance-none border border-forest checked:bg-white relative checked:bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27%23003934%27%20stroke-width=%273%27%3E%3Cpath%20d=%27M20%206L9%2017L4%2012%27/%3E%3C/svg%3E')] checked:bg-center checked:bg-no-repeat checked:bg-[length:14px]"
         :class="[
           { '!border-red-700': errorMessage },
         ]"
