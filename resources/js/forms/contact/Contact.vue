@@ -145,14 +145,14 @@ onMounted(() => {
 });
 
 const form = ref({
-  interest: ['1.5-Zimmerwohnung'],
-  name: 'Muster',
-  firstname: 'Max',
-  phone: '079 123 45 67',
-  street: 'Musterstrasse 1',
-  location: '8000 Zürich',
-  email: 'test@example.com',
-  privacy: true,
+  interest: [],
+  name: null,
+  firstname: null,
+  phone: null,
+  street: null,
+  location: null,
+  email: null,
+  privacy: false,
   website: ''
 });
 
