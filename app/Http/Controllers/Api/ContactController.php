@@ -19,6 +19,9 @@ class ContactController extends Controller
 
 		Subscriber::create([
 			'interest' => implode(', ', $interest),
+			'interest_1_5' => in_array('1.5-Zimmerwohnung', $interest),
+			'interest_2_5' => in_array('2.5-Zimmerwohnung', $interest),
+			'interest_3_5' => in_array('3.5-Zimmerwohnung', $interest),
 			'firstname' => $request->input('firstname'),
 			'name' => $request->input('name'),
 			'street' => $request->input('street'),
