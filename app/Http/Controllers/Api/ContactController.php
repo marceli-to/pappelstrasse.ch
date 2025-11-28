@@ -8,6 +8,7 @@ use App\Models\Subscriber;
 use App\Notifications\Contact\OwnerInformation;
 use App\Notifications\Contact\UserConfirmation;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -29,6 +30,30 @@ class ContactController extends Controller
 			'email' => $request->input('email'),
 			'phone' => $request->input('phone'),
 		]);
+
+		// Send JSON email to Flatfox
+		$jsonPayload = [
+			'refProperty' => '3050',
+			'refHouse' => '99',
+			'refObject' => '9997',
+			'inquiryName' => $request->input('name'),
+			'inquiryFirstname' => $request->input('firstname'),
+			'inquiryEmail' => $request->input('email'),
+			'inquiryPhone' => $request->input('phone'),
+			'remark' => implode(', ', $interest),
+		];
+
+		try {
+			Mail::raw(json_encode($jsonPayload, JSON_PRETTY_PRINT), function ($message) {
+				$message->to(env('MAIL_TO_FLATFOX'))
+					->subject('Anfrage Pappelstrasse Dietlikon 3050.99.9997');
+			});
+		} catch (\Exception $e) {
+			\Log::error('Failed to send JSON email to Flatfox: '.$e->getMessage(), [
+				'email' => env('MAIL_TO_FLATFOX'),
+				'payload' => $jsonPayload,
+			]);
+		}
 
 		// $data = [
 		// 	'date_submission' => date('d.m.Y', time()),
