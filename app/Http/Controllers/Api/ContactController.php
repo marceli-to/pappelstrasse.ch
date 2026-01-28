@@ -35,7 +35,7 @@ class ContactController extends Controller
 		$jsonPayload = [
 			'refProperty' => '3050',
 			'refHouse' => '99',
-			'refObject' => '9997',
+			'refObject' => '9996',
 			'inquiryName' => $request->input('name'),
 			'inquiryFirstname' => $request->input('firstname'),
 			'inquiryEmail' => $request->input('email'),
@@ -46,7 +46,7 @@ class ContactController extends Controller
 		try {
 			Mail::raw(json_encode($jsonPayload, JSON_PRETTY_PRINT), function ($message) {
 				$message->to(env('MAIL_TO_FLATFOX'))
-					->subject('Anfrage Pappelstrasse Dietlikon 3050.99.9997');
+					->subject('Anfrage Pappelstrasse Dietlikon 3050.99.9996');
 			});
 		} catch (\Exception $e) {
 			\Log::error('Failed to send JSON email to Flatfox: '.$e->getMessage(), [
