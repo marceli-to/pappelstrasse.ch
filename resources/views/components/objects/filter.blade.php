@@ -49,6 +49,46 @@
     </div>
   </div>
 
+<div class="col-span-6 lg:col-span-3">
+  <div class="w-full max-w-[540px]">
+    <div class="relative">
+      <label
+        for="availability"
+        class="pointer-events-none absolute left-20 top-10 z-10 text-[15px] font-medium uppercase tracking-[0.04em] text-[#0b4b46]"
+      >
+        Verfügbarkeit
+      </label>
+
+      <select
+        id="availability"
+        name="availability"
+        class="block w-full appearance-none rounded-full border border-[#0b4b46] _bg-[#EBF0DF] bg-[#f3f0e6] px-20 pb-10 pt-30 text-[14px] text-[#0b4b46] outline-none transition"
+      >
+        <option>Alle Wohnungen</option>
+        <option>Verfügbar</option>
+        <option>Reserviert</option>
+        <option>Vermietet</option>
+      </select>
+
+      <svg
+        class="pointer-events-none absolute right-20 top-1/2 w-18 h-18 -translate-y-1/2 text-[#0b4b46]"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 7L10 13L16 7"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+
   <div class="col-span-6 lg:col-span-3">
     <div class="uppercase font-lato-black font-black text-sage text-md tracking-wider">Hausteil</div>
     <div>
