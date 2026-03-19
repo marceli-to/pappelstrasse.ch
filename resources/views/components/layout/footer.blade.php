@@ -1,6 +1,3 @@
-@if (request()->routeIs('page.landing'))
-  <x-map />
-@endif
 <footer class="w-full text-xs lg:text-sm leading-[1.2] text-black">
 
   <x-layout.inner class="!py-15 md:!py-25 lg:!py-35">
@@ -74,12 +71,10 @@
   </x-layout.inner>
 
 </footer>
-
-@vite('resources/js/forms/contact/app.js')
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3BMHNXQQCY"></script>
+{{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BMHNXQQCY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-3BMHNXQQCY');
-</script>
+</script> --}}
