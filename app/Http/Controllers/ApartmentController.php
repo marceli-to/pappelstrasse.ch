@@ -8,6 +8,10 @@ class ApartmentController extends Controller
   public function index()
   {
     $apartments = (new GetData)->execute();
-    return view('pages.apartments', ['apartments' => $apartments]);
+    $buildings = $apartments->groupBy('ref_house')->sortKeys();
+    return view('pages.apartments', [
+      'apartments' => $apartments,
+      'buildings' => $buildings,
+    ]);
   }
 }
