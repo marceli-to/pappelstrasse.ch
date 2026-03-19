@@ -3,23 +3,31 @@
   'alt' => '',
   'class' => '',
 ])
-<figure>
-  <picture>
-    <source media="(min-width: 1200px)" srcset="/img/{{ $image }}-xl.avif" type="image/avif">
-    <source media="(min-width: 768px)" srcset="/img/{{ $image }}-lg.avif" type="image/avif">
-    <source srcset="/img/{{ $image }}-md.avif" type="image/avif">
-    <source media="(min-width: 1200px)" srcset="/img/{{ $image }}-xl.webp" type="image/webp">
-    <source media="(min-width: 768px)" srcset="/img/{{ $image }}-lg.webp" type="image/webp">
-    <source srcset="/img/{{ $image }}-md.webp" type="image/webp">
-    <source media="(min-width: 1200px)" srcset="/img/{{ $image }}-xl.jpg" type="image/jpeg">
-    <source media="(min-width: 768px)" srcset="/img/{{ $image }}-lg.jpg" type="image/jpeg">
-    <source srcset="/img/{{ $image }}-md.jpg" type="image/jpeg">
-    <img
-      src="/img/{{ $image }}.jpg"
-      alt="{{ $alt }}"
-      title="{{ $alt }}"
-      height="1600"
-      width="900"
-      class="w-full h-auto {{ $class }}">
-  </picture>
+<figure class="h-screen w-screen relative">
+  
+  <img
+    src="/img/{{ $image }}-portrait.jpg"
+    alt="{{ $alt }}"
+    title="{{ $alt }}"
+    height="1600"
+    width="900"
+    class="w-full h-full object-cover block md:hidden {{ $class }}">
+
+  <img
+    src="/img/{{ $image }}-landscape.jpg"
+    alt="{{ $alt }}"
+    title="{{ $alt }}"
+    height="1600"
+    width="900"
+    class="w-full h-full object-cover hidden md:block {{ $class }}">
+
+    <div class="w-196 h-196 absolute top-24 left-1/2 -translate-x-1/2 flex items-center justify-center">
+      <x-icons.logo class="w-160 h-auto" />
+    </div>
+
+    <button class="cursor-pointer absolute bottom-70 left-1/2 -translate-x-1/2 flex flex-col items-center group">
+      <span class="uppercase text-white">Wohnen in Dietlikon</span>
+      <x-icons.arrow-scroll class="w-68 h-auto group-hover:translate-y-2 transition-transform" />
+    </button>
+
 </figure>

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/marceli.to/Jamon.digital/Webroot/pappelstrasse.ch/public -type f \\\\\\(-name *.woff* -o -name *.ttf -o -name *.otf -o -name *.eot \\\\\\))",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:flatfox.ch)",
+      "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso.blade.php)",
+      "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso-sm.blade.php)",
+      "Bash(npx vite:*)"
+    ]
+  }
+}
