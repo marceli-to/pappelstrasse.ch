@@ -14,6 +14,10 @@ return [
     |
     */
 
+    'flatfox' => [
+        'api_uri' => env('FLATFOX_API_URI'),
+    ],
+
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],
