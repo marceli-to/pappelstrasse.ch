@@ -1,3 +1,3 @@
-<h1 class="font-bebas font-semibold text-forest uppercase {{ $class ?? '' }}">
+<h1 class="text-forest uppercase {{ $class ?? '' }}">
   {{ $slot }}
 </h1>
