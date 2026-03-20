@@ -3,7 +3,7 @@
   'alt' => '',
   'class' => '',
 ])
-<figure class="h-screen w-screen relative">
+<figure class="h-screen md:h-[calc(100vh_-_80px)] w-full relative">
   
   <img
     src="/img/{{ $image }}-portrait.jpg"

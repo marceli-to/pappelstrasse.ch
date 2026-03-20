@@ -1,7 +1,6 @@
 ## API Documentation
 https://flatfox.ch/en/docs/api/#/guides/listing-status-update
 
-
 <article class="markdown-section" id="main"><h1 id="listing-status-update"><a href="#/guides/listing-status-update?id=listing-status-update" data-id="listing-status-update" class="anchor"><span>Listing status update</span></a></h1><p>Use to Flatfox <a href="#/resources/public-listing">PublicListing API</a> to retrieve information about listings and update your website accordingly.  </p><p>You will not require an API key.</p><p>In short you can get all information for a given project ID via the following URL. The example is with project ID 1, change this number to the ID given by Flatfox<br><a href="https://flatfox.ch/api/v1/public-listing/?project=1&amp;status=pre&amp;status=act&amp;status=dis&amp;status=arc&amp;status=rem" target="_blank" rel="noopener">https://flatfox.ch/api/v1/public-listing/?project=1&amp;status=pre&amp;status=act&amp;status=dis&amp;status=arc&amp;status=rem</a></p><p>Always display the information of the object with the highest listing primary key (PK) when multiple listings share the same reference number.</p><h2 id="python-example"><a href="#/guides/listing-status-update?id=python-example" data-id="python-example" class="anchor"><span>Python example</span></a></h2><pre v-pre="" data-lang="python"><code class="lang-python"># External library, installed with `pip install requests`
 import requests
 

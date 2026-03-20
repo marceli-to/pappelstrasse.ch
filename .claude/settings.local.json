@@ -9,7 +9,8 @@
       "WebFetch(domain:flatfox.ch)",
       "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso.blade.php)",
       "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso-sm.blade.php)",
-      "Bash(npx vite:*)"
+      "Bash(npx vite:*)",
+      "Bash(npm install:*)"
     ]
   }
 }
