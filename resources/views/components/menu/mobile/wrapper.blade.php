@@ -4,7 +4,7 @@
   class="fixed inset-0 z-50 flex items-center justify-center w-full h-dvh bg-forest md:!hidden">
 
   @if (!request()->routeIs('page.landing'))
-    <a href="{{ route('page.landing') }}" class="fixed top-25 left-25 text-dew ">
+    <a href="{{ route('page.landing') }}" class="fixed top-20 left-24 text-dew ">
       <x-icons.logo class="w-66 h-auto" />
     </a>
   @endif
