@@ -4,59 +4,23 @@
 
 @section('content')
 
-  <section class="bg-cream">
+  <x-sections.hero-split>
 
-    <x-layout.inner class="!px-0 !max-w-none">
+    <x-headings.h1 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+      Lage
+    </x-headings.h1>
 
-      <div class="lg:grid lg:grid-cols-2">
+    <p>Die zentrale Lage überzeugt durch eine hervorragende Anbindung: Der Bahnhof Dietlikon mit direkten Verbindungen nach Zürich und Winterthur, vielfältige Einkaufs-möglichkeiten sowie Dienstleister des täglichen Bedarfs sind bequem zu Fuss erreichbar. Im Erdgeschoss des Gebäudes befindet sich zudem ein Migros-Supermarkt, der eine besonders komfortable Versorgung direkt vor der Haustüre ermöglicht.</p>
+    <p>Gleichzeitig sorgen umliegende Grünflächen und verkehrsberuhigte Bereiche für ein angenehmes, ent-spanntes Wohngefühl. Die Kombi-nation aus urbaner Nähe und naturnaher Umgebung bietet eine hohe Lebensqualität für unter-schiedlichste Wohnbedürfnisse.</p>
 
-        <div class="py-40 pl-24 pr-48 xl:pr-64 self-center xl:ml-[calc((100vw_-_80rem)_/_2_+_24px)] xl:pl-0">
+    <div class="mt-30 flex flex-col gap-y-10 items-end justify-end">
+      <x-buttons.primary href="{{ config('site.google_maps_url') }}" target="_blank">
+        Google Maps
+        <x-icons.arrow-right class="w-16 h-auto shrink-0 -rotate-45" />
+      </x-buttons.primary>
+    </div>
 
-          <x-headings.h1 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
-            Lage
-          </x-headings.h1>
-          
-          <p>Die zentrale Lage überzeugt durch eine hervorragende Anbindung: Der Bahnhof Dietlikon mit direkten Verbindungen nach Zürich und Winterthur, vielfältige Einkaufs-möglichkeiten sowie Dienstleister des täglichen Bedarfs sind bequem zu Fuss erreichbar. Im Erdgeschoss des Gebäudes befindet sich zudem ein Migros-Supermarkt, der eine besonders komfortable Versorgung direkt vor der Haustüre ermöglicht.</p>
-          <p>Gleichzeitig sorgen umliegende Grünflächen und verkehrsberuhigte Bereiche für ein angenehmes, ent-spanntes Wohngefühl. Die Kombi-nation aus urbaner Nähe und naturnaher Umgebung bietet eine hohe Lebensqualität für unter-schiedlichste Wohnbedürfnisse.</p>
-          
-          <div class="mt-30 flex flex-col gap-y-10 items-end justify-end">
-            <x-buttons.primary href="" class="text-[15px] md:text-[18px] uppercase inline-flex items-center gap-10 py-12 pl-12 pr-18 group">
-              <x-icons.file class="w-20 h-auto shrink-0" />
-              Kurzbaubeschrieb
-            </x-buttons.primary>
-            <x-buttons.primary href="" class="text-[15px] md:text-[18px] uppercase inline-flex items-center gap-10 py-12 pl-12 pr-18 group">
-              <x-icons.file class="w-20 h-auto shrink-0" />
-              Facts and Figures
-            </x-buttons.primary>
-          </div>
-
-        </div>
-
-        <div class="relative">
-          <x-swiper.wrapper class="gallery-swiper">
-            <x-swiper.slide>
-              <img src="/img/pappelstrasse-galerie-1.jpg" alt="" class="w-full h-full lg:aspect-square 2xl:aspect-auto object-cover" />
-            </x-swiper.slide>
-            <x-swiper.slide>
-              <img src="/img/pappelstrasse-galerie-2.jpg" alt="" class="w-full h-full lg:aspect-square 2xl:aspect-auto object-cover" />
-            </x-swiper.slide>
-            <x-swiper.slide>
-              <img src="/img/pappelstrasse-galerie-3.jpg" alt="" class="w-full h-full lg:aspect-square 2xl:aspect-auto object-cover" />
-            </x-swiper.slide>
-          </x-swiper.wrapper>
-          <x-swiper.buttons.prev class="gallery-swiper-prev absolute top-1/2 left-30 -translate-y-1/2 z-10 cursor-pointer w-36 h-36 flex items-center justify-center border border-forest rounded-full bg-dew/20 transition-colors">
-            <x-icons.arrow-right class="w-14 h-auto rotate-180" />
-          </x-swiper.buttons.prev>
-          <x-swiper.buttons.next class="gallery-swiper-next absolute top-1/2 right-30 -translate-y-1/2 z-10 cursor-pointer w-36 h-36 flex items-center justify-center border border-forest rounded-full bg-dew/20 transition-colors">
-            <x-icons.arrow-right class="w-14 h-auto" />
-          </x-swiper.buttons.next>
-        </div>
-
-      </div>
-
-    </x-layout.inner>
-
-  </section>
+  </x-sections.hero-split>
 
   <section class="bg-sand">
     <x-layout.inner>
@@ -233,7 +197,7 @@
             </x-accordion.item>
           </x-accordion.wrapper>
         </div>
-        
+
       </div>
     </x-layout.inner>
   </section>
