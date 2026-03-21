@@ -100,6 +100,11 @@ class MapboxMap {
     this.#map.addControl(new mapboxgl.NavigationControl());
     this.#map.scrollZoom.disable();
 
+    if ('ontouchstart' in window) {
+      this.#map.dragPan.disable();
+      this.#map.touchZoomRotate.disable();
+    }
+
     this.#addMarkers();
     this.#loaded = true;
   }

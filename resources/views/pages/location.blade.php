@@ -21,7 +21,7 @@
     </div>
 
     <x-slot:aside>
-      <div class="lg:aspect-square 2xl:aspect-auto w-full h-full">
+      <div class="aspect-video lg:aspect-square 2xl:aspect-auto w-full h-full">
         <x-map class="h-full" />
       </div>
     </x-slot:aside>
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="border-y border-forest divide-y divide-forest mt-20">
+        <div class="border-y border-forest divide-y divide-forest mt-[44px] md:mt-[56px]">
           <div class="flex items-center justify-between py-10 md:py-15">
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
@@ -98,186 +98,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </x-layout.inner>
-  </section>
-
-  <section class="bg-sand">
-    <x-layout.inner>
-      <div class="py-80 flex flex-col gap-y-40 max-w-5xl">
-
-        <div>
-          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
-            Kurzbaubeschrieb
-          </x-headings.h2>
-          <x-accordion.wrapper>
-            <x-accordion.item id="k1">
-              <x-accordion.button title="Grundausbau" />
-              <x-accordion.content>
-                <ul class="list-disc pl-20">
-                  <li>Bodenbelag: Parkett Eiche, Riemenfertigparkett, mattversiegelt</li>
-                  <li>Sockelleiste: in Holz, Farbe Eiche Wandbelag: Abrieb, weiss</li>
-                  <li>Decke: Weissputz, weiss gestrichen</li>
-                  <li>Garderobe: Weissgrau</li>
-                  <li>Wohnungs- und Zimmertüren: braungrau</li>
-                </ul>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k2">
-              <x-accordion.button title="Küche" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k3">
-              <x-accordion.button title="Badezimmer" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k4">
-              <x-accordion.button title="Reduit" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k5">
-              <x-accordion.button title="Aussenfläche" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k6">
-              <x-accordion.button title="Fenster" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k7">
-              <x-accordion.button title="Verdunkelung" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k8">
-              <x-accordion.button title="Sonnenschutz" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k9">
-              <x-accordion.button title="Elektroanlagen" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k10">
-              <x-accordion.button title="Heizungsanlagen" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k11">
-              <x-accordion.button title="Lüftungsanlagen" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k12">
-              <x-accordion.button title="Liftanlagen" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k13">
-              <x-accordion.button title="Keller" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k14">
-              <x-accordion.button title="Waschküche / Trocknungsraum" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="k15">
-              <x-accordion.button title="Umgebung" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-          </x-accordion.wrapper>
-        </div>
-
-        <div>
-          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
-            Facts and Figures
-          </x-headings.h2>
-          <x-accordion.wrapper>
-            <x-accordion.item id="f1">
-              <x-accordion.button title="Mietbeginn" />
-              <x-accordion.content>
-                <p>Voraussichtlich 1. November 2026</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f2">
-              <x-accordion.button title="Bewerbung" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f3">
-              <x-accordion.button title="Sicherheitsleistung" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f4">
-              <x-accordion.button title="Kündigungsfrist" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f5">
-              <x-accordion.button title="Besichtigung" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f6">
-              <x-accordion.button title="Abstellräume" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f7">
-              <x-accordion.button title="Parkmöglichkeiten" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f8">
-              <x-accordion.button title="Fahrräder / Kinderwagen" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f9">
-              <x-accordion.button title="Haustiere" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-            <x-accordion.item id="f10">
-              <x-accordion.button title="Internet" />
-              <x-accordion.content>
-                <p>Content, content</p>
-              </x-accordion.content>
-            </x-accordion.item>
-          </x-accordion.wrapper>
-        </div>
-
       </div>
     </x-layout.inner>
   </section>
