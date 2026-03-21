@@ -10,15 +10,15 @@
     <x-layout.inner>
 
       <div class="grid grid-cols-2 gap-30 md:flex md:flex-row md:gap-60 lg:gap-80 md:justify-center md:items-start">
-        <x-cards.icon-feature label="Zentrale Lage">
+        <x-cards.feature label="Zentrale Lage">
           <x-icons.location class="w-40 h-auto" />
-        </x-cards.icon-feature>
-        <x-cards.icon-feature label="Naturnahe Umgebung">
+        </x-cards.feature>
+        <x-cards.feature label="Naturnahe Umgebung">
           <x-icons.nature class="w-40 h-auto" />
-        </x-cards.icon-feature>
-        <x-cards.icon-feature label="Hochwertiger<br>Ausbaustandard" class="col-span-full">
+        </x-cards.feature>
+        <x-cards.feature label="Hochwertiger<br>Ausbaustandard" class="col-span-full">
           <x-icons.sparkle class="w-44 h-auto" />
-        </x-cards.icon-feature>
+        </x-cards.feature>
       </div>
 
     </x-layout.inner>
