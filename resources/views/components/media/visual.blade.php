@@ -27,7 +27,7 @@
 
     <button class="cursor-pointer absolute bottom-70 left-1/2 -translate-x-1/2 flex flex-col items-center group">
       <span class="uppercase text-white">Wohnen in Dietlikon</span>
-      <x-icons.arrow-scroll class="w-68 h-auto group-hover:translate-y-2 transition-transform" />
+      <x-icons.arrow-scroll class="w-68 h-auto group-hover:translate-y-1 transition-transform" />
     </button>
 
 </figure>

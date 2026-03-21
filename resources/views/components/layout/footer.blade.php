@@ -33,8 +33,9 @@
       </div>
 
       <div class="md:flex md:gap-x-100">
-        <div class="flex w-full justify-between items-end mb-50 lg:mb-0">
-          <div>
+
+        <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
+          <div class="min-w-160 md:min-w-auto">
             <x-headings.h3 class="text-[16px] mb-10">
               Vermarktung
             </x-headings.h3>
@@ -47,8 +48,8 @@
           <x-icons.logo-apleona class="w-150 h-auto mb-2" />
         </div>
 
-        <div class="flex w-full justify-between items-end mb-50 lg:mb-0">
-          <div>
+        <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
+          <div class="min-w-160 md:min-w-auto">
             <x-headings.h3 class="text-[16px] mb-10">
               Im Auftrag von
             </x-headings.h3>

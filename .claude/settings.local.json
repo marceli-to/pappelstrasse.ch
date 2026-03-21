@@ -10,7 +10,8 @@
       "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso.blade.php)",
       "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso-sm.blade.php)",
       "Bash(npx vite:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git:*)"
     ]
   }
 }
