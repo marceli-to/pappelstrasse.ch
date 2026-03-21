@@ -1,5 +1,9 @@
 @extends('app')
+@section('meta_title', 'Wohnen')
+@section('meta_description', 'Wohnen an der Pappelstrasse in Dietlikon – moderne Architektur, hochwertige Materialien und grosszügige Grundrisse.')
+
 @section('content')
+
   <section class="bg-cream">
 
     <x-layout.inner class="!px-0 !max-w-none">

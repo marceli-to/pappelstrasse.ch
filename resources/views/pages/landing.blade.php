@@ -1,4 +1,6 @@
 @extends('app')
+@section('meta_description', 'Moderne 1.5- bis 3.5-Zimmerwohnungen an der Pappelstrasse 2/4 in Dietlikon – bezugsbereit ab Herbst 2026.')
+
 @section('content')
 
   <x-media.visual image="pappelstrasse-visual-landing" alt="" />

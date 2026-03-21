@@ -1,4 +1,6 @@
 @extends('app')
+@section('meta_title', 'Datenschutz')
+
 @section('content')
 <div class="bg-dew">
 
