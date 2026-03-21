@@ -41,8 +41,8 @@
               <span>Migros Dietlikon</span>
             </div>
             <div class="flex items-center gap-10">
-              <x-icons.walk class="w-20 h-auto" />
-              <span class="font-bold">1 Min.</span>
+              <x-icons.walk class="w-24 h-auto" />
+              <span class="font-bold w-70 md:w-80 text-right">1 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15">
@@ -52,7 +52,7 @@
             </div>
             <div class="flex items-center gap-10">
               <x-icons.car class="w-24 h-auto" />
-              <span class="font-bold">2 Min.</span>
+              <span class="font-bold w-70 md:w-80 text-right">2 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15">
@@ -61,8 +61,8 @@
               <span>Bahnhof Dietlikon</span>
             </div>
             <div class="flex items-center gap-10">
-              <x-icons.walk class="w-20 h-auto" />
-              <span class="font-bold">4 Min.</span>
+              <x-icons.walk class="w-24 h-auto" />
+              <span class="font-bold w-70 md:w-80 text-right">4 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15">
@@ -71,8 +71,8 @@
               <span>Schule Hüenerweid</span>
             </div>
             <div class="flex items-center gap-10">
-              <x-icons.walk class="w-20 h-auto" />
-              <span class="font-bold">10 Min.</span>
+              <x-icons.walk class="w-24 h-auto" />
+              <span class="font-bold w-70 md:w-80 text-right">10 Min.</span>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
-              <span class="font-bold">17 Min.</span>
+              <span class="font-bold w-70 md:w-80 text-right">17 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15">
@@ -94,7 +94,7 @@
             </div>
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
-              <span class="font-bold">19 Min.</span>
+              <span class="font-bold w-70 md:w-80 text-right">19 Min.</span>
             </div>
           </div>
         </div>
