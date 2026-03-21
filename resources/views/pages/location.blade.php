@@ -20,7 +20,87 @@
       </x-buttons.primary>
     </div>
 
+    <x-slot:aside>
+      <div class="lg:aspect-square 2xl:aspect-auto w-full h-full">
+        <x-map class="h-full" />
+      </div>
+    </x-slot:aside>
+
   </x-sections.hero-split>
+
+  <section class="bg-sand">
+    <x-layout.inner>
+      <div class="py-80 max-w-4xl mx-auto">
+        <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+          Mobilität und Anschlüsse
+        </x-headings.h2>
+        <div class="border-y border-forest divide-y divide-forest">
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.cart class="w-24 h-auto" />
+              <span>Migros Dietlikon</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.walk class="w-20 h-auto" />
+              <span class="font-bold">1 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.cart class="w-24 h-auto" />
+              <span>Ikea Dietlikon</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.car class="w-24 h-auto" />
+              <span class="font-bold">2 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.railway class="w-24 h-auto" />
+              <span>Bahnhof Dietlikon</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.walk class="w-20 h-auto" />
+              <span class="font-bold">4 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.school class="w-24 h-auto" />
+              <span>Schule Hüenerweid</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.walk class="w-20 h-auto" />
+              <span class="font-bold">10 Min.</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-y border-forest divide-y divide-forest mt-20">
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.train class="w-24 h-auto" />
+              <span>Zürich HB</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.train class="w-24 h-auto" />
+              <span class="font-bold">17 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15">
+            <div class="flex items-center gap-10">
+              <x-icons.train class="w-24 h-auto" />
+              <span>Winterthur</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.train class="w-24 h-auto" />
+              <span class="font-bold">19 Min.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </x-layout.inner>
+  </section>
 
   <section class="bg-sand">
     <x-layout.inner>
