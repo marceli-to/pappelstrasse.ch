@@ -34,8 +34,8 @@
         <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
           Mobilität und Anschlüsse
         </x-headings.h2>
-        <div class="border-y border-forest divide-y divide-forest" data-reveal-children>
-          <div class="flex items-center justify-between py-10 md:py-15">
+        <div data-reveal-children>
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />
               <span>Migros Dietlikon</span>
@@ -45,7 +45,7 @@
               <span class="font-bold w-70 md:w-80 text-right">1 Min.</span>
             </div>
           </div>
-          <div class="flex items-center justify-between py-10 md:py-15">
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />
               <span>Ikea Dietlikon</span>
@@ -55,7 +55,7 @@
               <span class="font-bold w-70 md:w-80 text-right">2 Min.</span>
             </div>
           </div>
-          <div class="flex items-center justify-between py-10 md:py-15">
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.railway class="w-24 h-auto" />
               <span>Bahnhof Dietlikon</span>
@@ -65,7 +65,7 @@
               <span class="font-bold w-70 md:w-80 text-right">4 Min.</span>
             </div>
           </div>
-          <div class="flex items-center justify-between py-10 md:py-15">
+          <div class="flex items-center justify-between py-10 md:py-15 border-y border-forest">
             <div class="flex items-center gap-10">
               <x-icons.school class="w-24 h-auto" />
               <span>Schule Hüenerweid</span>
@@ -76,8 +76,8 @@
             </div>
           </div>
         </div>
-        <div class="border-y border-forest divide-y divide-forest mt-[44px] md:mt-[56px]" data-reveal-children>
-          <div class="flex items-center justify-between py-10 md:py-15">
+        <div class="mt-[44px] md:mt-[56px]" data-reveal-children>
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
               <span>Zürich HB</span>
@@ -87,7 +87,7 @@
               <span class="font-bold w-70 md:w-80 text-right">17 Min.</span>
             </div>
           </div>
-          <div class="flex items-center justify-between py-10 md:py-15">
+          <div class="flex items-center justify-between py-10 md:py-15 border-y border-forest">
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
               <span>Winterthur</span>
