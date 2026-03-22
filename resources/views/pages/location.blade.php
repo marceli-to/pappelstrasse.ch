@@ -34,7 +34,7 @@
         <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
           Mobilität und Anschlüsse
         </x-headings.h2>
-        <div data-reveal-children>
+        <div data-reveal>
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-[44px] md:mt-[56px]" data-reveal-children>
+        <div class="mt-[44px] md:mt-[56px]" data-reveal>
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
