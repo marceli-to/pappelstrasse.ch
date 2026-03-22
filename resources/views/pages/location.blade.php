@@ -30,7 +30,7 @@
 
   <section class="bg-sand">
     <x-layout.inner>
-      <div class="py-80 max-w-4xl mx-auto">
+      <div class="py-80 max-w-3xl mx-auto">
         <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
           Mobilität und Anschlüsse
         </x-headings.h2>
