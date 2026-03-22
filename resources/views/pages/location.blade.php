@@ -6,7 +6,7 @@
 
   <x-sections.hero-split>
 
-    <x-headings.h1 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+    <x-headings.h1>
       Lage
     </x-headings.h1>
 
@@ -28,10 +28,10 @@
 
   </x-sections.hero-split>
 
-  <section class="bg-sand">
+  <section class="bg-sand pb-40 pt-30 md:pb-60 md:pt-40">
     <x-layout.inner>
-      <div class="py-80 max-w-3xl mx-auto">
-        <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
+      <div class="max-w-3xl mx-auto">
+        <x-headings.h2 data-reveal>
           Mobilität und Anschlüsse
         </x-headings.h2>
         <div data-reveal>

@@ -7,7 +7,7 @@
 <section class="{{ $bg }}">
   <x-layout.inner>
     <div class="py-80 max-w-4xl mx-auto">
-      <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
+      <x-headings.h2 data-reveal>
         {{ $title }}
       </x-headings.h2>
       <div class="text-[20px] md:text-[24px] uppercase" data-reveal>

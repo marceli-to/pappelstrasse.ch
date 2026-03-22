@@ -1,3 +1,3 @@
-<h2 class="text-forest uppercase {{ $class ?? '' }}">
+<h2 class="text-forest uppercase text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-12 md:mb-20 {{ $class ?? '' }}">
   {{ $slot }}
 </h2>

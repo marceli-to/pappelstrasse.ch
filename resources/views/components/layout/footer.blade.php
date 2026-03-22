@@ -1,9 +1,9 @@
-<footer class="bg-forest text-white py-30">
+<footer class="bg-forest text-white pb-30 pt-30 md:pb-40 md:pt-30">
 
   <x-layout.inner>
      
     <div class="max-w-2xl mb-50">
-      <x-headings.h2 class="text-[26px] md:text-[50px] text-pretty text-white! leading-[1.1] mb-10">
+      <x-headings.h2 class="text-[26px]! md:text-[50px]! text-pretty text-white! leading-[1.1] mb-10">
         Haben wir Ihr Interesse geweckt?
       </x-headings.h2>
       <p class="text-pretty">Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>

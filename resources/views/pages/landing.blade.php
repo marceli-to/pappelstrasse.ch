@@ -5,7 +5,7 @@
 
   <x-media.visual image="pappelstrasse-visual-landing" alt="" />
 
-  <section class="bg-forest text-dew text-[13px] md:text-[20px] w-full py-40">
+  <section class="bg-forest text-dew text-[13px] md:text-[20px] w-full py-30 lg:py-40">
 
     <x-layout.inner>
 
@@ -27,7 +27,7 @@
 
   <x-sections.hero-split>
 
-    <x-headings.h1 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+    <x-headings.h1>
       Wohnen und Leben<br>in Dietlikon
     </x-headings.h1>
 

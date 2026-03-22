@@ -21,11 +21,11 @@ strong {
 }
 
 p:not(:last-of-type){
-  @apply mb-16 lg:mb-20;
+  @apply mb-16 md:mb-24;
 }
 
 main ul {
-  @apply mb-16 lg:mb-20;
+  @apply mb-16 md:mb-24 pl-20;
 }
 
 main li {
