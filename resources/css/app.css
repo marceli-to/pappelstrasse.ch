@@ -31,3 +31,9 @@ main ul {
 main li {
   @apply mb-5 list-item list-disc
 }
+
+/* Prevent flash of unstyled content before ScrollReveal initialises */
+[data-reveal],
+[data-reveal-children] > * {
+  visibility: hidden;
+}

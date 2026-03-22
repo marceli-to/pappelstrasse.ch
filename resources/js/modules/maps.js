@@ -106,7 +106,11 @@ class MapboxMap {
     }
 
     this.#addMarkers();
-    this.#loaded = true;
+
+    this.#map.on('load', () => {
+      this.#mapElement.classList.remove('opacity-0');
+      this.#loaded = true;
+    });
   }
 
   #addMarkers() {
