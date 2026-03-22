@@ -38,7 +38,7 @@
       <div class="py-80 flex flex-col gap-y-40 max-w-5xl">
 
         <div>
-          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
             Kurzbaubeschrieb
           </x-headings.h2>
           <x-accordion.wrapper>
@@ -142,7 +142,7 @@
         </div>
 
         <div>
-          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+          <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
             Facts and Figures
           </x-headings.h2>
           <x-accordion.wrapper>

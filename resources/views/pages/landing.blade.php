@@ -9,7 +9,7 @@
 
     <x-layout.inner>
 
-      <div class="grid grid-cols-2 gap-30 md:flex md:flex-row md:gap-60 lg:gap-80 md:justify-center md:items-start">
+      <div class="grid grid-cols-2 gap-30 md:flex md:flex-row md:gap-60 lg:gap-80 md:justify-center md:items-start" data-reveal-children>
         <x-cards.feature label="Zentrale Lage">
           <x-icons.location class="w-40 h-auto" />
         </x-cards.feature>

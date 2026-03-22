@@ -31,10 +31,10 @@
   <section class="bg-sand">
     <x-layout.inner>
       <div class="py-80 max-w-3xl mx-auto">
-        <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15">
+        <x-headings.h2 class="text-[40px] md:text-[60px] text-pretty leading-[1.1] mb-15" data-reveal>
           Mobilität und Anschlüsse
         </x-headings.h2>
-        <div class="border-y border-forest divide-y divide-forest">
+        <div class="border-y border-forest divide-y divide-forest" data-reveal-children>
           <div class="flex items-center justify-between py-10 md:py-15">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="border-y border-forest divide-y divide-forest mt-[44px] md:mt-[56px]">
+        <div class="border-y border-forest divide-y divide-forest mt-[44px] md:mt-[56px]" data-reveal-children>
           <div class="flex items-center justify-between py-10 md:py-15">
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
