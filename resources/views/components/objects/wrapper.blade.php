@@ -4,7 +4,7 @@
 <div class="md:hidden pb-40">
 
   <div class="sticky top-0 z-30">
-    <div class="bg-cream w-full px-24 pt-50 py-20">
+    <div class="bg-cream w-full px-24 pt-60 py-20">
       <x-objects.iso class="h-auto w-full block overflow-visible" />
     </div>
 
