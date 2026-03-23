@@ -141,7 +141,7 @@
 </div>
 
 {{-- Desktop: iso + table grid --}}
-<div class="hidden md:px-24 md:mt-24 md:grid md:grid-cols-12 md:gap-x-36 lg:gap-x-48">
+<div class="hidden md:px-24 md:mt-24 md:grid md:grid-cols-12 md:gap-x-24 lg:gap-x-48">
 
   <div class="md:col-span-5 lg:col-span-6 mt-125">
     <x-objects.iso class="sticky top-120 w-full h-auto block py-[26%] -my-[26%] overflow-visible" />
