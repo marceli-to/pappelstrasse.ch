@@ -44,7 +44,8 @@
           <tr
             class="border-b border-forest/10 hover:bg-dew/50 transition-colors"
             data-filterable="true"
-            data-object-number="{{ $apartment['ref_house'] }}-{{ $apartment['ref_object'] }}"
+            data-object
+            data-object-number="{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
             data-object-state="{{ $state }}"
             data-object-rooms="{{ $apartment['number_of_rooms'] ?? '' }}"
             data-object-floor="{{ $apartment['floor'] ?? '' }}"

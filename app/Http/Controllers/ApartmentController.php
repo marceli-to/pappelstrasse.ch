@@ -9,7 +9,7 @@ class ApartmentController extends Controller
   {
     $apartments = (new GetData)->execute();
     $buildings = $apartments->groupBy('ref_house')->sortKeys();
-    return view('pages.apartments', [
+    return view('pages.offer', [
       'apartments' => $apartments,
       'buildings' => $buildings,
     ]);

@@ -1,7 +1,7 @@
 @props(['buildings' => collect()])
 
-<div class="sticky top-80 pt-30 z-50 w-full bg-white md:hidden">
-  <x-objects.iso-sm class="h-150 w-auto block overflow-visible" />
+<div class="sticky top-80 pt-30 z-50 w-full md:hidden">
+  <x-objects.iso class="h-auto w-full block overflow-visible" />
 </div>
 
 <div class="grid grid-cols-12 gap-x-15 md:gap-x-20 lg:gap-x-30">
@@ -12,11 +12,7 @@
 
   <div class="col-span-full md:col-span-7 lg:col-span-6 relative z-20">
     @foreach($buildings as $refHouse => $buildingApartments)
-      <x-objects.building
-        :apartments="$buildingApartments"
-        :title="'Pappelstrasse ' . $refHouse"
-        :building="$refHouse"
-      />
+      <x-objects.building :apartments="$buildingApartments" :title="'Pappelstrasse ' . $refHouse" :building="$refHouse" />
     @endforeach
   </div>
 
