@@ -5,7 +5,7 @@
 ])
 <figure class="h-screen md:h-[calc(100vh_-_80px)] w-full relative">
   
-  <picture class="block md:hidden">
+  <picture class="block md:hidden w-full h-full">
     <source srcset="/img/{{ $image }}-portrait.avif" type="image/avif">
     <source srcset="/img/{{ $image }}-portrait.webp" type="image/webp">
     <img
@@ -17,7 +17,7 @@
       class="w-full h-full object-cover {{ $class }}">
   </picture>
 
-  <picture class="hidden md:block">
+  <picture class="hidden md:block w-full h-full">
     <source srcset="/img/{{ $image }}-landscape.avif" type="image/avif">
     <source srcset="/img/{{ $image }}-landscape.webp" type="image/webp">
     <img
