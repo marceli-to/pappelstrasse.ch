@@ -6,14 +6,14 @@
 <x-sections.legal title="Datenschutzerklärung" class="max-w-3xl">
   <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Cookies
   </x-headings.h2>
   <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.</p>
   <p>Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.</p>
   <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschliessen sowie das automatische Löschen der Cookies beim Schliessen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Hosting Provider &amp; Server-LogFiles
   </x-headings.h2>
   <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
@@ -28,7 +28,7 @@
   <p>Diese Daten können nicht direkt bestimmten Personen zugeordnet werden. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.</p>
   <p>Diese Daten sowie alle Daten dieser Website werden bei unserem Hosting-Provider webkeeper GmbH, 8604 Volketswil, Schweiz gespeichert, deren Datenschutzerklärung Sie <x-links.styled href="https://www.webkeeper.ch/de/unternehmen/datenschutz" target="_blank">hier</x-links.styled> finden.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Kontaktformular
   </x-headings.h2>
   <p><strong>Umfang, Zweck und Rechtsgrundlage der Datenverarbeitung</strong></p>
@@ -52,7 +52,7 @@
   <p>Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der personenbezogenen Daten per E-Mail an <x-links.styled href="mailto:info@apleona.com">info@apleona.com</x-links.styled> zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
   <p>Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Google Analytics
   </x-headings.h2>
   <p>Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA.</p>
@@ -67,7 +67,7 @@
   <p><strong>Demografische Merkmale bei Google Analytics</strong></p>
   <p>Diese Website nutzt die Funktion "demografische Merkmale" von Google Analytics. Dadurch können Berichte erstellt werden, die Aussagen zu Alter, Geschlecht und Interessen der Seitenbesucher enthalten. Diese Daten stammen aus interessenbezogener Werbung von Google sowie aus Besucherdaten von Drittanbietern. Diese Daten können keiner bestimmten Person zugeordnet werden. Sie können diese Funktion jederzeit über die Anzeigeneinstellungen in Ihrem GoogleKonto deaktivieren oder die Erfassung Ihrer Daten durch Google Analytics wie im Punkt "Widerspruch gegen Datenerfassung" dargestellt generell untersagen.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Google Maps
   </x-headings.h2>
   <p><strong>Umfang, Zweck und Rechtsgrundlage der Datenverarbeitung</strong></p>
@@ -77,12 +77,12 @@
   <p>Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Installation der Cookies durch die entsprechenden Einstellungen in Ihrem Internet-Browser zu verhindern.</p>
   <p>Zudem erfolgt die Nutzung von Google Maps sowie der über Google Maps erlangten Informationen nach den Google-Nutzungsbedingungen <x-links.styled href="http://policies.google.com/terms" target="_blank">policies.google.com/terms</x-links.styled> und den Geschäftsbedingungen für <x-links.styled href="http://www.google.com/intl/de_de/help/terms_maps.html" target="_blank">Google Maps</x-links.styled>.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Recht auf Auskunft, Löschung, Sperrung
   </x-headings.h2>
   <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden oder eine E-Mail an <x-links.styled href="mailto:info@apleona.com">info@apleona.com</x-links.styled> senden.</p>
 
-  <x-headings.h2 class="text-[26px]! md:text-[50px]!">
+  <x-headings.h2 class="text-4xl! md:text-7xl!">
     Verwendung von Adobe Fonts
   </x-headings.h2>
   <p>Wir verwenden auf dieser Webseite die Schriftarten von Adobe Fonts, um ein ansprechendes Design und eine bessere Lesbarkeit zu gewährleisten. Adobe Fonts ist ein Dienst der Adobe Systems Software Ireland Limited, 4-6 Riverwalk, Citywest Business Campus, Dublin 24, Irland.</p>

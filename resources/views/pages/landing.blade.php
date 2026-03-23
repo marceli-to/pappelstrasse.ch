@@ -5,7 +5,7 @@
 
   <x-media.visual image="pappelstrasse-visual-landing" alt="" />
 
-  <section class="bg-forest text-dew text-[13px] md:text-[20px] w-full py-30 lg:py-40">
+  <section class="bg-forest text-dew text-xs md:text-2xl w-full py-30 lg:py-40">
 
     <x-layout.inner>
 

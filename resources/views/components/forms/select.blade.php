@@ -3,14 +3,14 @@
 <div class="w-full">
 
   <div class="relative">
-    <label for="{{ $id }}" class="pointer-events-none absolute left-20 md:left-25 top-10 z-10 text-[15px] md:text-[18px] font-medium uppercase">
+    <label for="{{ $id }}" class="pointer-events-none absolute left-20 md:left-25 top-10 z-10 text-md md:text-xl font-medium uppercase">
       {{ $label }}
     </label>
 
     <select
       id="{{ $id }}"
       name="{{ $name ?? $id }}"
-      {{ $attributes->merge(['class' => 'block w-full appearance-none rounded-full border border-forest px-20 md:px-25 pb-10 pt-30 md:pt-35 text-[14px] md:text-[16px] text-forest outline-none transition']) }}>
+      {{ $attributes->merge(['class' => 'block w-full appearance-none rounded-full border border-forest px-20 md:px-25 pb-10 pt-30 md:pt-35 text-sm md:text-lg text-forest outline-none transition']) }}>
       @foreach($options as $value => $text)
         <option value="{{ $value }}">{{ $text }}</option>
       @endforeach

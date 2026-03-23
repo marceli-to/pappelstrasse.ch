@@ -6,7 +6,7 @@
   <div class="w-full">
     <table class="w-full text-left">
       <thead>
-        <tr class="bg-forest font-display font-bold md:text-[16px] lg:text-[18px] text-cream uppercase tracking-wider border-b border-forest/20">
+        <tr class="bg-forest font-display font-bold md:text-lg lg:text-xl text-cream uppercase tracking-wider border-b border-forest/20">
           <th class="py-8 pr-10 pl-5">Objekt</th>
           <th class="py-8 pr-10">Etage</th>
           <th class="py-8 pr-10">Zimmer</th>
@@ -23,7 +23,7 @@
             $floorLabel = $labels['floors'][$apartment['floor'] ?? 0] ?? ($apartment['floor'] ?? '-');
           @endphp
           <tr
-            class="border-b border-forest md:text-[14px] lg:text-[16px] hover:bg-dew/50 transition-colors"
+            class="border-b border-forest md:text-sm lg:text-lg hover:bg-dew/50 transition-colors"
             data-filterable="true"
             data-object
             data-object-number="{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
@@ -55,7 +55,7 @@
                   target="_blank" 
                   title="Jetzt auf Flatfox anmelden" 
                   :icon="false" 
-                  class="py-6! px-10! text-[12px]!">
+                  class="py-6! px-10! text-xxs!">
                   Bewerben
                 </x-buttons.primary>
               @else

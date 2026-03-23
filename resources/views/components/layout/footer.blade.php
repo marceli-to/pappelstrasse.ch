@@ -3,7 +3,7 @@
   <x-layout.inner>
      
     <div class="max-w-2xl mb-50">
-      <x-headings.h2 class="text-[26px]! md:text-[50px]! text-pretty text-white! leading-[1.1] mb-10">
+      <x-headings.h2 class="text-4xl! md:text-7xl! text-pretty text-white! leading-[1.1] mb-10">
         Haben wir Ihr Interesse geweckt?
       </x-headings.h2>
       <p class="text-pretty">Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>
@@ -12,10 +12,10 @@
     <div class="lg:flex lg:justify-between">
 
       <div class="mb-50 lg:mb-0 lg:self-end">
-        <x-headings.h3 class="text-[16px] mb-10">
+        <x-headings.h3 class="text-lg mb-10">
           Kontaktperson
         </x-headings.h3>
-        <div class="text-[13px] xl:text-[16px] leading-[1.5]">
+        <div class="text-xs xl:text-lg leading-[1.5]">
           <strong>Chantal Bieri</strong><br>
           <a 
             href="tel:0448787777" 
@@ -36,10 +36,10 @@
 
         <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
           <div class="min-w-160 md:min-w-auto">
-            <x-headings.h3 class="text-[16px] mb-10">
+            <x-headings.h3 class="text-lg mb-10">
               Vermarktung
             </x-headings.h3>
-            <div class="text-[13px] xl:text-[16px] leading-[1.5]">
+            <div class="text-xs xl:text-lg leading-[1.5]">
               <strong>Apleona Schweiz AG</strong><br>
               Industriestrasse 21<br>
               8304 Wallisellen
@@ -50,10 +50,10 @@
 
         <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
           <div class="min-w-160 md:min-w-auto">
-            <x-headings.h3 class="text-[16px] mb-10">
+            <x-headings.h3 class="text-lg mb-10">
               Im Auftrag von
             </x-headings.h3>
-            <div class="text-[13px] xl:text-[16px] leading-[1.5]">
+            <div class="text-xs xl:text-lg leading-[1.5]">
               <strong>Migros&nbsp;Pensionskasse</strong><br>
               Wiesenstrasse 15<br>
               8952 Schlieren
@@ -64,7 +64,7 @@
       </div>
 
       <nav class="lg:self-end">
-        <ul class="flex flex-col gap-y-4 text-[13px] xl:text-[16px]">
+        <ul class="flex flex-col gap-y-4 text-xs xl:text-lg">
           <li>
             <a 
               href="{{ route('page.imprint') }}"

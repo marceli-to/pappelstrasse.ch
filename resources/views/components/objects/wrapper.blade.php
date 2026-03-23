@@ -9,7 +9,7 @@
     </div>
 
     {{-- Header --}}
-    <div class="bg-forest font-display font-bold text-[16px] text-cream uppercase tracking-wider grid grid-cols-[30px_75px_auto_90px_50px] items-center py-10">
+    <div class="bg-forest font-display font-bold text-lg text-cream uppercase tracking-wider grid grid-cols-[30px_75px_auto_90px_50px] items-center py-10">
       <div></div>
       <div>Zimmer</div>
       <div class="text-right pr-30">Nettomietzins/Mt.</div>
@@ -50,10 +50,10 @@
           <div class="flex justify-center px-10">
             <span class="block w-8 h-8 rounded-full {{ $stateColor }} shrink-0"></span>
           </div>
-          <div class="font-bold text-[16px]">
+          <div class="font-bold text-lg">
             {{ $apartment['number_of_rooms'] ?? '-' }}
           </div>
-          <div class="text-right pr-30 font-bold text-[16px]">
+          <div class="text-right pr-30 font-bold text-lg">
             @if($state === 'free' && $apartment['price_display'])
               CHF {{ number_format($apartment['price_display'], 0, '.', "’") }}
             @elseif($state === 'reserved')
@@ -65,7 +65,7 @@
           <div class="flex justify-end">
             @if($state === 'free' && $apartment['price_display'])
               <span @click.stop>
-                <x-buttons.primary href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" target="_blank" title="Jetzt auf Flatfox anmelden" :icon="false" class="!py-8 !px-10 !text-[12px]">
+                <x-buttons.primary href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" target="_blank" title="Jetzt auf Flatfox anmelden" :icon="false" class="!py-8 !px-10 !text-xxs">
                   Bewerben
                 </x-buttons.primary>
               </span>
@@ -81,7 +81,7 @@
         {{-- Detail panel --}}
         <div x-show="active && active.ref === '{{ $ref }}'" x-collapse x-cloak>
           <div class="pt-10 pb-20 border-t border-forest ml-30 mr-50">
-            <dl class="space-y-15 text-[16px]">
+            <dl class="space-y-15 text-lg">
               <div class="flex justify-between">
                 <dt>Whg.-Nr</dt>
                 <dd>{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}</dd>
@@ -96,7 +96,7 @@
               </div>
             </dl>
             <div class="mt-15 flex justify-end">
-              <x-buttons.primary href="/downloads/pappelstrasse-{{ $ref }}.pdf" target="_blank" iconPosition="before" class="!py-8 !pl-10 !pr-14 !text-[13px] !gap-8">
+              <x-buttons.primary href="/downloads/pappelstrasse-{{ $ref }}.pdf" target="_blank" iconPosition="before" class="!py-8 !pl-10 !pr-14 !text-xs !gap-8">
                 <x-icons.file class="w-16 h-16" />
                 Grundriss
               </x-buttons.primary>
@@ -110,26 +110,26 @@
 
   {{-- Parking / extras --}}
   <div class="mt-40 relative z-40 bg-cream">
-    <div class="bg-forest font-display font-bold text-[16px] text-cream grid grid-cols-[30px_1fr_1fr_50px] items-center py-10 uppercase tracking-wider">
+    <div class="bg-forest font-display font-bold text-lg text-cream grid grid-cols-[30px_1fr_1fr_50px] items-center py-10 uppercase tracking-wider">
       <div></div>
       <div>Typ</div>
       <div class="text-right">Preis/Mt.</div>
       <div></div>
     </div>
     <div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-[16px]">
+      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
         <div>46 Tiefgarageplätze</div>
         <div class="text-right font-bold">CHF 130</div>
         <div></div>
       </div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-[16px]">
+      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
         <div>E-Ladestation</div>
         <div class="text-right font-bold">CHF 170</div>
         <div></div>
       </div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-[16px]">
+      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
         <div>Motorradplätze</div>
         <div class="text-right font-bold">CHF 40</div>

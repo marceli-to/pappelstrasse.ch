@@ -10,7 +10,7 @@
       <x-headings.h2 data-reveal>
         {{ $title }}
       </x-headings.h2>
-      <div class="text-[20px] md:text-[24px] uppercase" data-reveal>
+      <div class="text-2xl md:text-3xl uppercase" data-reveal>
         @foreach($items as $item)
           <div class="py-10 md:py-15 border-t border-forest @if($loop->last) border-b @endif">{{ $item }}</div>
         @endforeach
