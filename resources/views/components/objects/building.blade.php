@@ -1,23 +1,4 @@
-@props(['apartments', 'title', 'building'])
-
-@php
-  $floorLabels = [
-    0 => 'EG',
-    1 => '1. OG',
-    2 => '2. OG',
-    3 => '3. OG',
-    4 => '4. OG',
-    5 => '5. OG',
-    6 => '6. OG',
-    7 => '7. OG',
-  ];
-
-  $stateLabels = [
-    'free' => 'frei',
-    'reserved' => 'reserviert',
-    'taken' => 'vermietet',
-  ];
-@endphp
+@props(['apartments', 'title', 'building', 'labels' => []])
 
 <div data-building="{{ $building }}" class="mb-20 lg:mb-40">
   <h2 class="text-lg lg:text-xl font-bold mb-5">{{ $title }}</h2>
@@ -39,7 +20,7 @@
           @php
             $state = $apartment['state'] ?? 'free';
             $isAvailable = in_array($state, ['free', 'reserved']);
-            $floorLabel = $floorLabels[$apartment['floor'] ?? 0] ?? ($apartment['floor'] ?? '-');
+            $floorLabel = $labels['floors'][$apartment['floor'] ?? 0] ?? ($apartment['floor'] ?? '-');
           @endphp
           <tr
             class="border-b border-forest/10 hover:bg-dew/50 transition-colors"
@@ -77,7 +58,7 @@
                   Flatfox
                 </a>
               @else
-                {{ $stateLabels[$state] ?? $state }}
+                {{ $labels['states'][$state] ?? $state }}
               @endif
             </td>
           </tr>

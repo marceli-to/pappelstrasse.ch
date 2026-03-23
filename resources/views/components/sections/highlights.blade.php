@@ -4,9 +4,9 @@
   'bg' => 'bg-sand',
 ])
 
-<section class="{{ $bg }}">
+<section class="{{ $bg }} pb-40 pt-30 md:pb-60 md:pt-40 lg:pb-80 lg:pt-60">
   <x-layout.inner>
-    <div class="py-80 max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <x-headings.h2 data-reveal>
         {{ $title }}
       </x-headings.h2>

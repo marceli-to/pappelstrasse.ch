@@ -1,4 +1,4 @@
-@props(['buildings' => collect()])
+@props(['buildings' => collect(), 'labels' => []])
 
 <div class="sticky top-80 pt-30 z-30 bg-cream w-full md:hidden">
   <x-objects.iso class="h-auto w-full block overflow-visible" />
@@ -12,7 +12,7 @@
 
   <div class="col-span-full md:col-span-7 lg:col-span-6 relative z-20">
     @foreach($buildings as $refHouse => $buildingApartments)
-      <x-objects.building :apartments="$buildingApartments" :title="'Pappelstrasse ' . $refHouse" :building="$refHouse" />
+      <x-objects.building :apartments="$buildingApartments" :title="'Pappelstrasse ' . $refHouse" :building="$refHouse" :labels="$labels" />
     @endforeach
   </div>
 

@@ -7,7 +7,7 @@ class FetchData
 {
   public function execute(): void
   {
-    $url = config('services.flatfox.api_uri');
+    $url = config('estate.flatfox.api_uri');
     $response = Http::get($url);
     $json_data = $response->json();
     $all_listings = $json_data['results'] ?? [];

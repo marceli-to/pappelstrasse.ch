@@ -22,7 +22,7 @@
   <x-layout.inner>
     <div>
       <x-objects.filter :options="$filterOptions" />
-      <x-objects.objects :buildings="$buildings" />
+      <x-objects.wrapper :buildings="$buildings" :labels="$labels" />
     </div>
   </x-layout.inner>
 </section>

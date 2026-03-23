@@ -32,7 +32,7 @@
 
 </x-sections.hero-split>
 
-<section class="bg-sand pb-40 pt-30 md:pb-60 md:pt-40">
+<section class="bg-sand pb-40 pt-30 md:pb-60 md:pt-40 lg:pb-80 lg:pt-60">
   <x-layout.inner>
     <div class="flex flex-col gap-y-40 max-w-5xl">
 
