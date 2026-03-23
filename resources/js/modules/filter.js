@@ -32,7 +32,13 @@ const Filter = (() => {
       activeFilters[type] = value;
     }
 
+    updateSelectStyle(el);
     apply();
+  };
+
+  const updateSelectStyle = (el) => {
+    const isDefault = el.selectedIndex === 0;
+    el.classList.toggle('bg-sand', !isDefault);
   };
 
   const apply = () => {
@@ -67,6 +73,7 @@ const Filter = (() => {
     activeFilters = {};
     document.querySelectorAll(selectors.attribute).forEach((select) => {
       select.selectedIndex = 0;
+      select.classList.remove('bg-sand');
     });
     apply();
   };
