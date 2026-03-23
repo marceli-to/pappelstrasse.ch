@@ -30,11 +30,11 @@
 
   <section class="bg-sand pb-40 pt-30 md:pb-60 md:pt-40 lg:pb-80 lg:pt-60">
     <x-layout.inner>
-      <div class="max-w-3xl mx-auto">
-        <x-headings.h2 data-reveal>
+      <div class="max-w-3xl mx-auto" data-reveal>
+        <x-headings.h2>
           Mobilität und Anschlüsse
         </x-headings.h2>
-        <div data-reveal>
+        <div>
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />

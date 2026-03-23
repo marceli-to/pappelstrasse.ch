@@ -36,8 +36,8 @@
   <x-layout.inner>
     <div class="flex flex-col gap-y-40 max-w-5xl">
 
-      <div>
-        <x-headings.h2 data-reveal>
+      <div data-reveal>
+        <x-headings.h2>
           Kurzbaubeschrieb
         </x-headings.h2>
         <x-accordion.wrapper>
@@ -140,8 +140,8 @@
         </x-accordion.wrapper>
       </div>
 
-      <div>
-        <x-headings.h2 data-reveal>
+      <div data-reveal>
+        <x-headings.h2>
           Facts and Figures
         </x-headings.h2>
         <x-accordion.wrapper>
