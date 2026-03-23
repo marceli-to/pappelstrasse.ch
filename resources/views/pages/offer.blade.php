@@ -21,7 +21,7 @@
 <section>
   <x-layout.inner>
     <div>
-      <x-objects.filter :apartments="$apartments" />
+      <x-objects.filter :options="$filterOptions" />
       <x-objects.objects :buildings="$buildings" />
     </div>
   </x-layout.inner>
