@@ -42,9 +42,9 @@
 
     <x-slot:aside>
       <x-gallery.carousel name="gallery" :images="[
-        '/img/pappelstrasse-galerie-1.jpg',
-        '/img/pappelstrasse-galerie-2.jpg',
-        '/img/pappelstrasse-galerie-3.jpg',
+        '/img/pappelstrasse-galerie-1',
+        '/img/pappelstrasse-galerie-2',
+        '/img/pappelstrasse-galerie-3',
       ]" />
     </x-slot:aside>
 

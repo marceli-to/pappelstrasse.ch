@@ -5,21 +5,29 @@
 ])
 <figure class="h-screen md:h-[calc(100vh_-_80px)] w-full relative">
   
-  <img
-    src="/img/{{ $image }}-portrait.jpg"
-    alt="{{ $alt }}"
-    title="{{ $alt }}"
-    height="1600"
-    width="900"
-    class="w-full h-full object-cover block md:hidden {{ $class }}">
+  <picture class="block md:hidden">
+    <source srcset="/img/{{ $image }}-portrait.avif" type="image/avif">
+    <source srcset="/img/{{ $image }}-portrait.webp" type="image/webp">
+    <img
+      src="/img/{{ $image }}-portrait.jpg"
+      alt="{{ $alt }}"
+      title="{{ $alt }}"
+      height="1600"
+      width="900"
+      class="w-full h-full object-cover {{ $class }}">
+  </picture>
 
-  <img
-    src="/img/{{ $image }}-landscape.jpg"
-    alt="{{ $alt }}"
-    title="{{ $alt }}"
-    height="1600"
-    width="900"
-    class="w-full h-full object-cover hidden md:block {{ $class }}">
+  <picture class="hidden md:block">
+    <source srcset="/img/{{ $image }}-landscape.avif" type="image/avif">
+    <source srcset="/img/{{ $image }}-landscape.webp" type="image/webp">
+    <img
+      src="/img/{{ $image }}-landscape.jpg"
+      alt="{{ $alt }}"
+      title="{{ $alt }}"
+      height="1600"
+      width="900"
+      class="w-full h-full object-cover {{ $class }}">
+  </picture>
 
     <div class="w-196 h-196 lg:w-240 lg:h-240 absolute top-24 lg:top-36 left-1/2 -translate-x-1/2 flex items-center justify-center">
       <x-icons.logo class="w-160 h-auto" />

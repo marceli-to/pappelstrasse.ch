@@ -8,7 +8,11 @@
   <x-swiper.wrapper class="{{ $name }}-swiper">
     @foreach($images as $image)
       <x-swiper.slide>
-        <img src="{{ $image }}" alt="" class="w-full h-full lg:aspect-square 2xl:aspect-auto object-cover" />
+        <picture>
+          <source srcset="{{ $image }}.avif" type="image/avif">
+          <source srcset="{{ $image }}.webp" type="image/webp">
+          <img src="{{ $image }}.jpg" alt="" class="w-full h-full lg:aspect-square 2xl:aspect-auto object-cover" />
+        </picture>
       </x-swiper.slide>
     @endforeach
   </x-swiper.wrapper>
