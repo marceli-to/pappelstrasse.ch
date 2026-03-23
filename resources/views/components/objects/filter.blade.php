@@ -1,6 +1,6 @@
 @props(['options' => []])
 
-<div class="flex flex-col gap-15 md:grid md:grid-cols-12 md:gap-15 md:max-w-3xl">
+<div class="flex flex-col gap-15 md:grid md:grid-cols-12 md:gap-15 md:max-w-3xl px-24">
 
   <div class="md:col-span-4">
     <x-forms.select

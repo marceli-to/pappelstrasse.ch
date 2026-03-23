@@ -13,10 +13,6 @@
 @source '../**/*.blade.php';  
 @source '../**/*.js';
 
-h1, h2 {
-  @apply font-display font-bold uppercase tracking-wide;
-}
-
 strong {
   @apply font-bold;
 }

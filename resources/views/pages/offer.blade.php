@@ -19,7 +19,7 @@
 </section>
 
 <section>
-  <x-layout.inner>
+  <x-layout.inner class="px-0!">
     <div>
       <x-objects.filter :options="$filterOptions" />
       <x-objects.wrapper :buildings="$buildings" :labels="$labels" />

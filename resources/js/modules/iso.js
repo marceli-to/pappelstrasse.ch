@@ -24,8 +24,9 @@ const Iso = (function() {
       });
     }); 
 
-    // Event listeners for 'selectors.object'
+    // Event listeners for 'selectors.object' (desktop only)
     document.querySelectorAll(selectors.object).forEach(function(object) {
+      if (object.closest('.md\\:hidden')) return;
       // Add mouseover event listener for selectors.object
       object.addEventListener('mouseover', function() {
         highlightIso(object);
@@ -186,10 +187,31 @@ const Iso = (function() {
     return siblings;
   };
 
+  const selectByNumber = function(number, state) {
+    clearIso();
+    clearRow();
+    const isos = document.querySelectorAll('[data-iso="' + number + '"]');
+    isos.forEach(function(iso) {
+      if (!iso) return;
+      iso.classList.add('is-active', state === 'free' ? 'is-available' : 'is-taken');
+      const parent = iso.parentElement;
+      let next = parent.nextElementSibling;
+      while (next) { next.classList.add('is-up'); next = next.nextElementSibling; }
+    });
+  };
+
+  const clearSelection = function() {
+    clearIso();
+    clearRow();
+  };
+
   return {
     init: initialize,
+    select: selectByNumber,
+    clear: clearSelection,
   };
 })();
 
 // Initialize
 Iso.init();
+window.Iso = Iso;
