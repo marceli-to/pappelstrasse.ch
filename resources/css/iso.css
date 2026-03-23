@@ -58,11 +58,11 @@
   @apply transition-transform duration-300;
 }
 .is-up {
-  @apply transform -translate-y-[90px] md:-translate-y-[20%] transition-transform duration-300;
+  @apply transform -translate-y-[90px] md:-translate-y-[125px] transition-transform duration-300;
 }
 
 .is-down {
-  @apply transform translate-y-[90px] md:translate-y-[20%] transition-transform duration-300;
+  @apply transform translate-y-[90px] md:translate-y-[125px] transition-transform duration-300;
 }
 
 .no-transform {

@@ -1,6 +1,6 @@
 @props(['options' => []])
 
-<div class="flex flex-col gap-15 md:grid md:grid-cols-12 md:gap-15 md:max-w-3xl px-24">
+<div class="flex flex-col gap-15 md:grid md:grid-cols-12 md:gap-20 md:max-w-4xl px-24">
 
   <div class="md:col-span-4">
     <x-forms.select
@@ -11,7 +11,7 @@
       :options="$options['availability'] ?? []" />
   </div>
 
-  <div class="flex gap-15 md:col-span-8 md:grid md:grid-cols-2">
+  <div class="flex gap-15 md:col-span-8 md:grid md:grid-cols-2 md:gap-20">
 
     <div class="w-full md:w-auto">
       <x-forms.select

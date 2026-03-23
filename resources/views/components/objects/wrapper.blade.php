@@ -9,7 +9,7 @@
     </div>
 
     {{-- Header --}}
-    <div class="bg-forest font-display font-bold text-[16px] text-cream grid grid-cols-[30px_75px_auto_90px_50px] items-center py-10 uppercase tracking-wider">
+    <div class="bg-forest font-display font-bold text-[16px] text-cream uppercase tracking-wider grid grid-cols-[30px_75px_auto_90px_50px] items-center py-10">
       <div></div>
       <div>Zimmer</div>
       <div class="text-right pr-30">Nettomietzins/Mt.</div>
@@ -64,14 +64,11 @@
           </div>
           <div class="flex justify-end">
             @if($state === 'free' && $apartment['price_display'])
-              <a
-                href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/"
-                target="_blank"
-                title="Jetzt auf Flatfox anmelden"
-                @click.stop
-                class="border border-forest rounded-full leading-none text-[12px] uppercase inline-flex items-center px-10 py-8 hover:bg-sand transition-colors">
-                Bewerben
-              </a>
+              <span @click.stop>
+                <x-buttons.primary href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" target="_blank" title="Jetzt auf Flatfox anmelden" :icon="false" class="!py-8 !px-10 !text-[12px]">
+                  Bewerben
+                </x-buttons.primary>
+              </span>
             @endif
           </div>
           <div class="flex justify-center">
@@ -99,15 +96,10 @@
               </div>
             </dl>
             <div class="mt-15 flex justify-end">
-              <a
-                href="/downloads/pappelstrasse-{{ $ref }}.pdf"
-                target="_blank"
-                class="border border-forest rounded-full leading-none text-[13px] uppercase inline-flex items-center gap-8 px-15 py-10 hover:bg-sand transition-colors">
-                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
+              <x-buttons.primary href="/downloads/pappelstrasse-{{ $ref }}.pdf" target="_blank" iconPosition="before" class="!py-8 !pl-10 !pr-14 !text-[13px] !gap-8">
+                <x-icons.file class="w-16 h-16" />
                 Grundriss
-              </a>
+              </x-buttons.primary>
             </div>
           </div>
         </div>
@@ -149,10 +141,10 @@
 </div>
 
 {{-- Desktop: iso + table grid --}}
-<div class="hidden md:px-24 md:grid grid-cols-12 mt-100">
+<div class="hidden md:px-24 md:mt-24 md:grid md:grid-cols-12 md:gap-x-36 lg:gap-x-48">
 
-  <div class="md:col-span-5 lg:col-span-6 md:pt-30 lg:pt-50">
-    <x-objects.iso class="sticky top-120 w-full h-auto block mb-40 lg:mb-80 py-[26%] -my-[26%] overflow-visible" />
+  <div class="md:col-span-5 lg:col-span-6 mt-125">
+    <x-objects.iso class="sticky top-120 w-full h-auto block py-[26%] -my-[26%] overflow-visible" />
   </div>
 
   <div class="col-span-full md:col-span-7 lg:col-span-6 relative z-20">
