@@ -11,7 +11,12 @@
       "Bash(sed -i '' 's/{{ class }}/{{ $class }}/g' resources/views/components/objects/iso-sm.blade.php)",
       "Bash(npx vite:*)",
       "Bash(npm install:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(curl -sO https://realfavicongenerator.net/files/fbe0285d-95fe-41a5-8b6e-13169b3f1bf3/favicon.svg)",
+      "Bash(curl -sO https://realfavicongenerator.net/files/fbe0285d-95fe-41a5-8b6e-13169b3f1bf3/favicon-96x96.png)",
+      "Bash(curl -sO https://realfavicongenerator.net/files/fbe0285d-95fe-41a5-8b6e-13169b3f1bf3/favicon.ico)",
+      "Bash(curl -sO https://realfavicongenerator.net/files/fbe0285d-95fe-41a5-8b6e-13169b3f1bf3/apple-touch-icon.png)",
+      "Bash(curl -sO https://realfavicongenerator.net/files/fbe0285d-95fe-41a5-8b6e-13169b3f1bf3/web-app-manifest-192x192.png)"
     ]
   }
 }

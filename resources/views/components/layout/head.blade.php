@@ -11,7 +11,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Pappelstrasse" />
+<meta name="apple-mobile-web-app-title" content="Pappelstrasse Dietlikon" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:title" content="@hasSection('meta_title')@yield('meta_title') – {{ $appName }}@else{{ $appName }}@endif" />
 <meta property="og:type" content="website" />
