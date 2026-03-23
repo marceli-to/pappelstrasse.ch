@@ -3,7 +3,7 @@
   'alt' => '',
   'class' => '',
 ])
-<figure class="h-screen md:h-[calc(100vh_-_80px)] w-full relative">
+<figure class="h-[100dvh] md:h-[calc(100dvh_-_80px)] w-full relative">
   
   <picture class="block md:hidden w-full h-full">
     <source srcset="/img/{{ $image }}-portrait.avif" type="image/avif">
