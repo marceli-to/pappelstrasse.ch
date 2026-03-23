@@ -5,9 +5,9 @@
 
 <section class="bg-cream pb-40 pt-30 md:pb-60 md:pt-40">
   <x-layout.inner>
-    <div class="max-w-2xl">
+    <div class="max-w-2xl" data-reveal>
 
-      <div data-reveal>
+      <div>
         <x-headings.h1>
           Finden Sie Ihre<br>Traumwohnung
         </x-headings.h1>
@@ -20,7 +20,7 @@
 
 <section>
   <x-layout.inner class="px-0!">
-    <div>
+    <div data-reveal>
       <x-objects.filter :options="$filterOptions" />
       <x-objects.wrapper :buildings="$buildings" :labels="$labels" />
     </div>
