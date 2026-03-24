@@ -4,7 +4,7 @@
   'class' => '',
 ])
 
-<div class="relative {{ $class }}">
+<div class="relative aspect-[4/3] lg:aspect-auto lg:h-full {{ $class }}">
   <x-swiper.wrapper class="{{ $name }}-swiper">
     @foreach($images as $image)
       <x-swiper.slide>
