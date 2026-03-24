@@ -31,6 +31,7 @@ main li {
 
 /* Prevent flash of unstyled content before ScrollReveal initialises */
 [data-reveal],
+[data-reveal-down],
 [data-reveal-children] > * {
   visibility: hidden;
 }
