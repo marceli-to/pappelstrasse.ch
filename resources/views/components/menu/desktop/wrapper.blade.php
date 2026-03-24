@@ -1,6 +1,6 @@
 <div class="{{ $class ?? '' }}">
   <nav>
-    <ul class="md:flex md:flex-row md:gap-x-100">
+    <ul class="md:grid md:grid-cols-3 md:gap-x-100 md:text-center w-full">
 
       <x-menu.desktop.item 
         href="{{ route('page.offer') }}" 

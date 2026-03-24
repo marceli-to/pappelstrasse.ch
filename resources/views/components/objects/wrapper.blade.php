@@ -151,6 +151,35 @@
     @foreach($buildings as $refHouse => $buildingApartments)
       <x-objects.building :apartments="$buildingApartments" :title="'Pappelstrasse ' . $refHouse" :building="$refHouse" :labels="$labels" />
     @endforeach
+
+    {{-- Parking / extras --}}
+    <div class="mb-20 lg:mb-40">
+      <x-headings.h2>Parkplätze / Extras</x-headings.h2>
+      <div class="w-full">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="bg-forest font-display font-bold md:text-lg lg:text-xl text-cream uppercase tracking-wider border-b border-forest/20">
+              <th class="py-8 pr-10 pl-5">Typ</th>
+              <th class="py-8 pr-5 text-right">Preis/Mt.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-forest md:text-sm lg:text-lg">
+              <td class="py-8 pr-10 pl-5">46 Tiefgarageplätze</td>
+              <td class="py-8 pr-5 text-right font-bold">CHF 130</td>
+            </tr>
+            <tr class="border-b border-forest md:text-sm lg:text-lg">
+              <td class="py-8 pr-10 pl-5">E-Ladestation</td>
+              <td class="py-8 pr-5 text-right font-bold">CHF 170</td>
+            </tr>
+            <tr class="border-b border-forest md:text-sm lg:text-lg">
+              <td class="py-8 pr-10 pl-5">Motorradplätze</td>
+              <td class="py-8 pr-5 text-right font-bold">CHF 40</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
 </div>

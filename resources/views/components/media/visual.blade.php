@@ -29,12 +29,12 @@
       class="w-full h-full object-cover {{ $class }}">
   </picture>
 
-    <div class="w-196 h-196 lg:w-240 lg:h-240 absolute top-24 lg:top-36 left-1/2 -translate-x-1/2 flex items-center justify-center" data-reveal>
-      <x-icons.logo class="w-160 h-auto" />
+    <div class="w-196 h-196 lg:w-260 lg:h-260 absolute top-24 lg:top-36 left-1/2 -translate-x-1/2 flex items-center justify-center" data-reveal>
+      <x-icons.logo class="w-192 lg:w-240 h-auto" />
     </div>
 
     <button
-      @click="$el.closest('figure').nextElementSibling.scrollIntoView({ behavior: 'smooth' })"
+      @click="document.querySelector('[data-scroll-target]').scrollIntoView({ behavior: 'smooth' })"
       class="cursor-pointer absolute bottom-70 left-1/2 -translate-x-1/2 flex flex-col gap-y-4 lg:gap-y-8 items-center group"
       data-reveal-down>
       <span class="uppercase text-white">Wohnen in Dietlikon</span>

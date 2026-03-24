@@ -15,6 +15,12 @@
           <div class="py-10 md:py-15 border-t border-forest @if($loop->last) border-b @endif">{{ $item }}</div>
         @endforeach
       </div>
+      <div class="mt-30 flex justify-end">
+        <x-buttons.primary href="{{ route('page.living') }}" class="hover:bg-cream!">
+          Übersicht
+          <x-icons.arrow-right class="w-16 h-auto shrink-0 group-hover:translate-x-3 transition-transform" />
+        </x-buttons.primary>
+      </div>
     </div>
   </x-layout.inner>
 </section>

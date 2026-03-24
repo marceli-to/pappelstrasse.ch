@@ -2,8 +2,8 @@
 
   <x-layout.inner>
      
-    <div class="max-w-2xl mb-50">
-      <x-headings.h2 class="text-4xl! md:text-7xl! text-pretty text-white! leading-[1.1] mb-10">
+    <div class="max-w-2xl mb-50 text-dew">
+      <x-headings.h2 class="text-4xl! md:text-7xl! text-pretty text-dew! leading-[1.1] mb-10">
         Haben wir Ihr Interesse geweckt?
       </x-headings.h2>
       <p class="text-pretty">Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>
@@ -34,7 +34,7 @@
 
       <div class="md:flex md:gap-x-100">
 
-        <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
+        <div class="flex w-full items-end justify-start gap-x-20 mb-50 lg:mb-0">
           <div class="min-w-160 md:min-w-auto">
             <x-headings.h3 class="text-lg mb-10">
               Vermarktung
@@ -48,7 +48,7 @@
           <x-icons.logo-apleona class="w-150 h-auto mb-2" />
         </div>
 
-        <div class="flex w-full _justify-between items-end justify-start gap-x-20 mb-50 lg:mb-0">
+        <div class="flex w-full items-end justify-start gap-x-20 mb-50 lg:mb-0">
           <div class="min-w-160 md:min-w-auto">
             <x-headings.h3 class="text-lg mb-10">
               Im Auftrag von

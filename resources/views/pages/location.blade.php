@@ -10,8 +10,8 @@
       Lage
     </x-headings.h1>
 
-    <p>Die zentrale Lage überzeugt durch eine hervorragende Anbindung: Der Bahnhof Dietlikon mit direkten Verbindungen nach Zürich und Winterthur, vielfältige Einkaufs-möglichkeiten sowie Dienstleister des täglichen Bedarfs sind bequem zu Fuss erreichbar. Im Erdgeschoss des Gebäudes befindet sich zudem ein Migros-Supermarkt, der eine besonders komfortable Versorgung direkt vor der Haustüre ermöglicht.</p>
-    <p>Gleichzeitig sorgen umliegende Grünflächen und verkehrsberuhigte Bereiche für ein angenehmes, ent-spanntes Wohngefühl. Die Kombi-nation aus urbaner Nähe und naturnaher Umgebung bietet eine hohe Lebensqualität für unter-schiedlichste Wohnbedürfnisse.</p>
+    <p>Die zentrale Lage überzeugt durch eine hervorragende Anbindung: Der Bahnhof Dietlikon mit direkten Verbindungen nach Zürich und Winterthur, vielfältige Einkaufsmöglichkeiten sowie Dienstleister des täglichen Bedarfs sind bequem zu Fuss erreichbar. Im Erdgeschoss des Gebäudes befindet sich zudem ein Migros-Supermarkt, der eine besonders komfortable Versorgung direkt vor der Haustüre ermöglicht.</p>
+    <p>Gleichzeitig sorgen umliegende Grünflächen und verkehrsberuhigte Bereiche für ein angenehmes, entspanntes Wohngefühl. Die Kombination aus urbaner Nähe und naturnaher Umgebung bietet eine hohe Lebensqualität für unterschiedlichste Wohnbedürfnisse.</p>
 
     <div class="mt-30 flex flex-col gap-y-10 items-end justify-end">
       <x-buttons.primary href="{{ config('site.google_maps_url') }}" target="_blank">
@@ -48,11 +48,31 @@
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
               <x-icons.cart class="w-24 h-auto" />
-              <span>Ikea Dietlikon</span>
+              <span>IKEA Dietlikon</span>
             </div>
             <div class="flex items-center gap-10">
               <x-icons.car class="w-24 h-auto" />
               <span class="font-bold w-70 md:w-80 text-right">2 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
+            <div class="flex items-center gap-10">
+              <x-icons.cinema class="w-24 h-auto" />
+              <span>Pathé Kino Dietlikon</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.car class="w-24 h-auto" />
+              <span class="font-bold w-70 md:w-80 text-right">2 Min.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
+            <div class="flex items-center gap-10">
+              <x-icons.school class="w-24 h-auto" />
+              <span>Schule Hüenerweid</span>
+            </div>
+            <div class="flex items-center gap-10">
+              <x-icons.walk class="w-24 h-auto" />
+              <span class="font-bold w-70 md:w-80 text-right">10 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
@@ -65,36 +85,24 @@
               <span class="font-bold w-70 md:w-80 text-right">4 Min.</span>
             </div>
           </div>
-          <div class="flex items-center justify-between py-10 md:py-15 border-y border-forest">
-            <div class="flex items-center gap-10">
-              <x-icons.school class="w-24 h-auto" />
-              <span>Schule Hüenerweid</span>
-            </div>
-            <div class="flex items-center gap-10">
-              <x-icons.walk class="w-24 h-auto" />
-              <span class="font-bold w-70 md:w-80 text-right">10 Min.</span>
-            </div>
-          </div>
-        </div>
-        <div class="mt-[44px] md:mt-[56px]" data-reveal>
           <div class="flex items-center justify-between py-10 md:py-15 border-t border-forest">
             <div class="flex items-center gap-10">
-              <x-icons.train class="w-24 h-auto" />
+              <x-icons.railway class="w-24 h-auto" />
               <span>Zürich HB</span>
             </div>
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
-              <span class="font-bold w-70 md:w-80 text-right">17 Min.</span>
+              <span class="font-bold w-70 md:w-80 text-right">15 Min.</span>
             </div>
           </div>
           <div class="flex items-center justify-between py-10 md:py-15 border-y border-forest">
             <div class="flex items-center gap-10">
-              <x-icons.train class="w-24 h-auto" />
-              <span>Winterthur</span>
+              <x-icons.railway class="w-24 h-auto" />
+              <span>Bahnhof Winterthur</span>
             </div>
             <div class="flex items-center gap-10">
               <x-icons.train class="w-24 h-auto" />
-              <span class="font-bold w-70 md:w-80 text-right">19 Min.</span>
+              <span class="font-bold w-70 md:w-80 text-right">16 Min.</span>
             </div>
           </div>
         </div>

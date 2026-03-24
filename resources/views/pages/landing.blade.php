@@ -5,7 +5,7 @@
 
   <x-media.visual image="pappelstrasse-visual-landing" alt="" />
 
-  <section class="bg-forest text-dew text-xs md:text-2xl w-full py-30 lg:py-40">
+  <section data-scroll-target class="bg-dew text-forest text-xs md:text-2xl w-full py-30 lg:py-40 md:scroll-mt-80">
 
     <x-layout.inner>
 
@@ -34,7 +34,7 @@
     <p>Mit dem Neubauprojekt an der Pappelstrasse 2/4 entstehen nahe des Bahnhof Dietlikon 48 moderne 1.5- bis 3.5-Zimmerwohnungen, die ab 1. November 2026 bezugsbereit sind. Zwei elegant gestaltete, klar gegliederte Gebäude prägen das neue Ensemble und verleihen ihm mit ihren vertikalen Fassadenelementen und grosszügigen Fensterfronten eine zeitgemässe, urbane Ausstrahlung.</p>
 
     <div class="mt-30 flex justify-end">
-      <x-buttons.primary href="#contact">
+      <x-buttons.primary href="{{ route('page.offer') }}">
         Zu den Angeboten
         <x-icons.arrow-right class="w-16 h-auto shrink-0 group-hover:translate-x-3 transition-transform" />
       </x-buttons.primary>
@@ -42,9 +42,11 @@
 
     <x-slot:aside>
       <x-gallery.carousel name="gallery" :images="[
-        '/img/pappelstrasse-galerie-1',
-        '/img/pappelstrasse-galerie-2',
-        '/img/pappelstrasse-galerie-3',
+        '/img/pappelstrasse-visualisierung-02',
+        '/img/pappelstrasse-visualisierung-03',
+        '/img/pappelstrasse-visualisierung-wohnung-05',
+        '/img/pappelstrasse-visualisierung-wohnung-03',
+        '/img/pappelstrasse-visualisierung-wohnung-02',
       ]" />
     </x-slot:aside>
 
