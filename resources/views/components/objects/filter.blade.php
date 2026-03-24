@@ -35,7 +35,7 @@
 
   <div class="w-full md:col-span-12 flex items-end">
 
-    <x-buttons.primary href="javascript:;" class="js-btn-reset py-6! px-10! text-xxs!" :icon="false">
+    <x-buttons.primary href="javascript:;" class="js-btn-reset py-8! px-10! text-xxs!" :icon="false">
       Filter zurücksetzen
     </x-buttons.primary>
 

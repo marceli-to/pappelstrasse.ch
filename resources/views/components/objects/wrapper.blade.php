@@ -65,7 +65,7 @@
           <div class="flex justify-end">
             @if($state === 'free' && $apartment['price_display'])
               <span @click.stop>
-                <x-buttons.primary href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" target="_blank" title="Jetzt auf Flatfox anmelden" :icon="false" class="!py-8 !px-10 !text-xxs">
+                <x-buttons.primary href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" target="_blank" title="Jetzt auf Flatfox anmelden" :icon="false" class="py-8! px-10! text-xxs!">
                   Bewerben
                 </x-buttons.primary>
               </span>
@@ -160,21 +160,21 @@
           <thead>
             <tr class="bg-forest font-display font-bold md:text-lg lg:text-xl text-cream uppercase tracking-wider border-b border-forest/20">
               <th class="py-8 pr-10 pl-5">Typ</th>
-              <th class="py-8 pr-5 text-right">Preis/Mt.</th>
+              <th class="py-8 pr-5 text-right">Preis/Mt. CHF</th>
             </tr>
           </thead>
           <tbody>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
               <td class="py-8 pr-10 pl-5">46 Tiefgarageplätze</td>
-              <td class="py-8 pr-5 text-right font-bold">CHF 130</td>
+              <td class="py-8 pr-5 text-right">130.00</td>
             </tr>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
               <td class="py-8 pr-10 pl-5">E-Ladestation</td>
-              <td class="py-8 pr-5 text-right font-bold">CHF 170</td>
+              <td class="py-8 pr-5 text-right">170.00</td>
             </tr>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
               <td class="py-8 pr-10 pl-5">Motorradplätze</td>
-              <td class="py-8 pr-5 text-right font-bold">CHF 40</td>
+              <td class="py-8 pr-5 text-right">40.00</td>
             </tr>
           </tbody>
         </table>
