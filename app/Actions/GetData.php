@@ -31,6 +31,10 @@ class GetData
     $states = $this->getState($data);
     $data = $data->map(function ($apartment) use ($states) {
       $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
+      // Flatfox floor values are off by one (1 = EG, 2 = 1. OG, etc.)
+      if (isset($apartment['floor']) && is_numeric($apartment['floor'])) {
+        $apartment['floor'] = $apartment['floor'] - 1;
+      }
       return $apartment;
     });
 

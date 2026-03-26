@@ -198,7 +198,7 @@
           <x-accordion.item id="f1">
             <x-accordion.button title="Mietbeginn" />
             <x-accordion.content>
-              <p>Voraussichtlich 1. November 2026</p>
+              <p>1. November 2026</p>
             </x-accordion.content>
           </x-accordion.item>
           <x-accordion.item id="f2">

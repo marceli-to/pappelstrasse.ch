@@ -12,6 +12,7 @@
           <th class="py-8 pr-10">Zimmer</th>
           <th class="py-8 pr-10 text-right">Fläche m²</th>
           <th class="py-8 pr-10 text-right">Miete CHF</th>
+          <th class="py-8 pr-10 text-right">Plan</th>
           <th class="py-8 pr-5 text-right">&nbsp;</th>
         </tr>
       </thead>
@@ -47,6 +48,15 @@
               @if($isAvailable && $apartment['price_display'])
                 {{ number_format($apartment['price_display'], 2, '.', "’") }}
               @endif
+            </td>
+            <td class="py-8 pr-10 pl-10">
+                <a 
+                  href="/downloads/pappelstrasse-{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}.pdf" 
+                  target="_blank" 
+                  class="text-forest hover:text-forest/80"
+                  aria-label="Plan herunterladen">
+                  <x-icons.file class="w-20 h-20" />
+                </a>
             </td>
             <td class="py-8 pr-5 text-right align-middle">
               @if($isAvailable)
