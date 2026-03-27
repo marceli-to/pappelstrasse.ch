@@ -13,7 +13,6 @@ return [
 
     'labels' => [
         'floors' => [
-            0 => 'EG',
             1 => '1. OG',
             2 => '2. OG',
             3 => '3. OG',
