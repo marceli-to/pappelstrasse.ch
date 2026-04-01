@@ -49,7 +49,7 @@
 }
 
 [data-object].is-active {
-  @apply bg-dew/10!;
+  @apply bg-dew/50!;
 }
 
 /* Floor classes */

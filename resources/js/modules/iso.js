@@ -96,10 +96,12 @@ const Iso = (function() {
 
   const hightlightRow = function(iso) {
     const isoData = iso.dataset;
-    const object = document.querySelector('[data-object-number="'+isoData.iso+'"]');
-    if (!object) return;
-    const objectData = object.dataset;
-    object.classList.add('is-active');
+    const objects = document.querySelectorAll('[data-object-number="'+isoData.iso+'"]');
+    if (!objects.length) return;
+    const objectData = objects[0].dataset;
+    objects.forEach(function(object) {
+      object.classList.add('is-active');
+    });
 
     // find all data-iso="iso.dataset.iso"
     const isos = document.querySelectorAll('[data-iso="' + isoData.iso + '"]');
