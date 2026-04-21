@@ -19,7 +19,6 @@
         @foreach($apartments as $apartment)
           @php
             $state = $apartment['state'] ?? 'free';
-            $isAvailable = in_array($state, ['free', 'reserved']);
             $floorLabel = $labels['floors'][$apartment['floor'] ?? 0] ?? ($apartment['floor'] ?? '-');
           @endphp
           <tr
@@ -44,22 +43,24 @@
               {{ $apartment['surface_living'] ?? '-' }}
             </td>
             <td class="py-8 pr-10 text-right">
-              @if($isAvailable && $apartment['price_display'])
+              @if($state === 'free' && $apartment['price_display'])
                 {{ number_format($apartment['price_display'], 2, '.', "’") }}
               @endif
             </td>
             <td class="py-8 pr-5 text-right align-middle">
-              @if($isAvailable)
-                <x-buttons.primary 
-                  href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
-                  target="_blank" 
-                  title="Jetzt auf Flatfox anmelden" 
-                  :icon="false" 
+              @if($state === 'free')
+                <x-buttons.primary
+                  href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/"
+                  target="_blank"
+                  title="Jetzt auf Flatfox anmelden"
+                  :icon="false"
                   class="py-6! px-10! text-xxs!">
                   Bewerben
                 </x-buttons.primary>
-              @else
-                {{ $labels['states'][$state] ?? $state }}
+              @elseif($state === 'reserved')
+                Reserviert
+              @elseif($state === 'taken')
+                Vermietet
               @endif
             </td>
           </tr>
