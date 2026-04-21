@@ -6,9 +6,13 @@ return [
         'api_uri' => env('FLATFOX_API_URI'),
     ],
 
+    'addresses' => [
+        '21' => 'Pappelstrasse 2',
+        '22' => 'Pappelstrasse 4',
+    ],
+
     'labels' => [
         'floors' => [
-            0 => 'EG',
             1 => '1. OG',
             2 => '2. OG',
             3 => '3. OG',

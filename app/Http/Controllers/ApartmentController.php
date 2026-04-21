@@ -19,7 +19,7 @@ class ApartmentController extends Controller
     $filterOptions = [
       'availability' => $filters['availability'],
       'rooms' => collect(['NULL' => $filters['rooms']['default']])->merge($rooms->mapWithKeys(fn($r) => [$r => $r])),
-      'floors' => collect(['NULL' => $filters['floors']['default']])->merge($floors->mapWithKeys(fn($f) => [$f => $labels['floors'][$f] ?? $f])),
+      'floors' => collect(['NULL' => $filters['floors']['default']])->union($floors->mapWithKeys(fn($f) => [$f => $labels['floors'][$f] ?? $f])),
     ];
 
     return view('pages.offer', [

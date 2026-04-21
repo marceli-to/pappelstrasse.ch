@@ -41,7 +41,7 @@
         data-object-state="{{ $state }}"
         data-object-rooms="{{ $apartment['number_of_rooms'] ?? '' }}"
         data-object-floor="{{ $apartment['floor'] ?? '' }}"
-        data-object-building="Pappelstrasse {{ $apartment['ref_house'] }}">
+        data-object-building="{{ config('estate.addresses')[$apartment['ref_house']] ?? ('Pappelstrasse ' . $apartment['ref_house']) }}">
 
         {{-- Summary row --}}
         <button
@@ -117,19 +117,19 @@
       <div></div>
     </div>
     <div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
+      <div class="grid grid-cols-[30px_2fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
         <div>46 Tiefgarageplätze</div>
         <div class="text-right font-bold">CHF 130</div>
         <div></div>
       </div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
+      <div class="grid grid-cols-[30px_2fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
-        <div>E-Ladestation</div>
-        <div class="text-right font-bold">CHF 170</div>
+        <div>Tiefgarageplatz mit <span class="whitespace-nowrap">E-Ladestation</span></div>
+        <div class="text-right font-bold">CHF 180</div>
         <div></div>
       </div>
-      <div class="grid grid-cols-[30px_1fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
+      <div class="grid grid-cols-[30px_2fr_1fr_50px] items-center py-12 border-b border-forest text-lg">
         <div></div>
         <div>Motorradplätze</div>
         <div class="text-right font-bold">CHF 40</div>
@@ -149,7 +149,7 @@
 
   <div class="col-span-full md:col-span-7 lg:col-span-6 relative z-20">
     @foreach($buildings as $refHouse => $buildingApartments)
-      <x-objects.building :apartments="$buildingApartments" :title="'Pappelstrasse ' . $refHouse" :building="$refHouse" :labels="$labels" />
+      <x-objects.building :apartments="$buildingApartments" :title="config('estate.addresses')[$refHouse] ?? ('Pappelstrasse ' . $refHouse)" :building="$refHouse" :labels="$labels" />
     @endforeach
 
     {{-- Parking / extras --}}
@@ -169,8 +169,8 @@
               <td class="py-8 pr-5 text-right">130.00</td>
             </tr>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
-              <td class="py-8 pr-10 pl-5">E-Ladestation</td>
-              <td class="py-8 pr-5 text-right">170.00</td>
+              <td class="py-8 pr-10 pl-5">Tiefgarageplatz mit E-Ladestation</td>
+              <td class="py-8 pr-5 text-right">180.00</td>
             </tr>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
               <td class="py-8 pr-10 pl-5">Motorradplätze</td>
