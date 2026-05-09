@@ -169,10 +169,6 @@
               <td class="py-8 pr-5 text-right">130.00</td>
             </tr>
             <tr class="border-b border-forest md:text-sm lg:text-lg">
-              <td class="py-8 pr-10 pl-5">Tiefgarageplatz mit E-Ladestation</td>
-              <td class="py-8 pr-5 text-right">180.00</td>
-            </tr>
-            <tr class="border-b border-forest md:text-sm lg:text-lg">
               <td class="py-8 pr-10 pl-5">Motorradplätze</td>
               <td class="py-8 pr-5 text-right">40.00</td>
             </tr>

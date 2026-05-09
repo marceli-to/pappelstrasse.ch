@@ -24,7 +24,13 @@
       "Bash(echo \"Converting $f...\")",
       "Bash(cwebp -q 80 \"$f\" -o \"$base.webp\")",
       "Bash(avifenc --min 20 --max 30 \"$f\" \"$base.avif\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(grep -r \"Pappelstrasse.*21\\\\|Pappelstrasse.*22\" /Users/marceli.to/Jamon.digital/Webroot/pappelstrasse.ch --include=*.php --include=*.blade.php --include=*.js --include=*.json)",
+      "Bash(find /Users/marceli.to/Jamon.digital/Webroot/pappelstrasse.ch -name .env* -o -name config/*.php)",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(f''''ref:{d.get\\(reference,-\\)} ref_house:{d.get\\(ref_house,-\\)} ref_obj:{d.get\\(ref_object,-\\)} floor:{d.get\\(floor,-\\)} rooms:{d.get\\(number_of_rooms,-\\)} street:{d.get\\(street,-\\)}''''\\) for d in sorted\\(data, key=lambda x: \\(x.get\\(''''ref_house'''',''''''''\\), x.get\\(''''ref_object'''',''''''''\\)\\)\\)]\")",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); seen=set\\(\\); [print\\(f''''ref={a.get\\(reference\\)}, floor={a.get\\(floor\\)}''''\\) for a in data if \\(r:=a.get\\(''''reference''''\\)\\) and r not in seen and not seen.add\\(r\\)]\")",
+      "Bash(php artisan:*)",
+      "Bash(ls /Users/marceli.to/Jamon.digital/Webroot/pappelstrasse.ch/public/downloads/*.pdf)"
     ]
   }
 }

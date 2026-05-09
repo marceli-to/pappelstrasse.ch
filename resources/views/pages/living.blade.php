@@ -17,7 +17,7 @@
         <x-icons.file class="w-20 h-auto shrink-0" />
         Kurzbaubeschrieb
       </x-buttons.primary>
-      <x-buttons.primary href="/downloads/pappelstrasse-facts-and-figures.pdf" target="_blank" iconPosition="before" class="justify-center">
+      <x-buttons.primary href="/downloads/pappelstrasse-facts-and-figures-v2.pdf" target="_blank" iconPosition="before" class="justify-center">
         <x-icons.file class="w-20 h-auto shrink-0" />
         Facts and Figures
       </x-buttons.primary>
@@ -240,7 +240,6 @@
             <x-accordion.content>
               <ul>
                 <li>46 Tiefgaragenplätze à CHF 130.00/Monat</li>
-                <li>E-Parkplatz: plus CHF 50.00/Monat für die E-Ladestation (zzgl. einmalige Onboarding Pauschale à CHF 69.00 und monatliche Stromkosten)</li>
                 <li>7 Motorradabstellplätze à CHF 40.00/Monat</li>
                 <li>3 Besucherparkplätze</li>
               </ul>
