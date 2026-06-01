@@ -18,7 +18,7 @@
 <button
   type="{{ $type }}"
   class="border border-forest hover:bg-sand transition-colors rounded-full leading-none text-md md:text-xl uppercase inline-flex items-center gap-10 py-12 {{ $padding }} group {{ $class }}"
-  title="{{ $title }}">
+  aria-title="{{ $title }}">
   {{ $slot }}
 </button>
 @else
@@ -27,7 +27,7 @@
   class="border border-forest hover:bg-sand transition-colors rounded-full leading-none text-md md:text-xl uppercase inline-flex items-center gap-10 py-12 {{ $padding }} group {{ $class }}"
   target="{{ $target }}"
   rel="{{ $rel }}"
-  title="{{ $title }}">
+  aria-title="{{ $title }}">
   {{ $slot }}
 </a>
 @endif

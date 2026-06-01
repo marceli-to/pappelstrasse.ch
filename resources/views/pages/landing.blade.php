@@ -34,10 +34,16 @@
     <p>Mit dem Neubauprojekt an der Pappelstrasse 2/4 entstehen nahe des Bahnhof Dietlikon 48 moderne 1.5- bis 3.5-Zimmerwohnungen, die ab 1. November 2026 bezugsbereit sind. Zwei elegant gestaltete, klar gegliederte Gebäude prägen das neue Ensemble und verleihen ihm mit ihren vertikalen Fassadenelementen und grosszügigen Fensterfronten eine zeitgemässe, urbane Ausstrahlung.</p>
 
     <div class="mt-30 flex justify-end">
-      <x-buttons.primary href="{{ route('page.offer') }}">
-        Zu den Angeboten
-        <x-icons.arrow-right class="w-16 h-auto shrink-0 group-hover:translate-x-3 transition-transform" />
-      </x-buttons.primary>
+      <div class="inline-flex flex-col gap-y-10 items-stretch">
+        <x-buttons.primary href="{{ route('page.offer') }}" title="Zu den Angeboten" class="justify-center">
+          Zu den Angeboten
+          <x-icons.arrow-right class="w-16 h-auto shrink-0 group-hover:translate-x-3 transition-transform" />
+        </x-buttons.primary>
+        <x-buttons.primary href="https://my.matterport.com/show/?m=U1563J1ezoX" target="_blank" rel="noopener" title="Virtueller Rundgang" class="justify-center">
+          Virtueller Rundgang
+          <x-icons.arrow-right class="w-16 h-auto shrink-0 group-hover:translate-x-3 transition-transform" />
+        </x-buttons.primary>
+      </div>
     </div>
 
     <x-slot:aside>
