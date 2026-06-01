@@ -17,6 +17,10 @@ strong {
   @apply font-bold;
 }
 
+[x-cloak] {
+  display: none !important;
+}
+
 p:not(:last-of-type){
   @apply mb-16 md:mb-24;
 }

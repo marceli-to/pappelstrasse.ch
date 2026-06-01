@@ -17,14 +17,19 @@
         active="{{ request()->routeIs('page.offer') }}" 
         title="Angebot" />
 
-      <x-menu.mobile.item 
-        href="{{ route('page.living') }}" 
-        active="{{ request()->routeIs('page.living') }}" 
+      <x-menu.mobile.item
+        href="{{ route('page.living') }}"
+        active="{{ request()->routeIs('page.living') }}"
         title="Wohnen" />
 
-      <x-menu.mobile.item 
-        href="{{ route('page.location') }}" 
-        active="{{ request()->routeIs('page.location') }}" 
+      <x-menu.mobile.item
+        href="{{ route('page.gallery') }}"
+        active="{{ request()->routeIs('page.gallery') }}"
+        title="Galerie" />
+
+      <x-menu.mobile.item
+        href="{{ route('page.location') }}"
+        active="{{ request()->routeIs('page.location') }}"
         title="Lage" />
 
     </ul>
