@@ -38,6 +38,29 @@
 
 <section class="bg-sand pb-40 pt-30 md:pb-60 md:pt-40 lg:pb-80 lg:pt-60">
   <x-layout.inner>
+    <div class="max-w-5xl">
+
+      <div data-reveal>
+        <x-headings.h2>
+          Virtueller Rundgang
+        </x-headings.h2>
+        <div class="aspect-video w-full">
+          <iframe
+            src="https://my.matterport.com/show/?m=U1563J1ezoX"
+            class="w-full h-full"
+            frameborder="0"
+            allowfullscreen
+            allow="xr-spatial-tracking"
+            title="Virtueller Rundgang"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </x-layout.inner>
+</section>
+
+<section class="bg-cream pb-40 pt-30 md:pb-60 md:pt-40 lg:pb-80 lg:pt-60">
+  <x-layout.inner>
     <div class="flex flex-col gap-y-40 max-w-5xl">
 
       <div data-reveal>
