@@ -4,6 +4,14 @@
 
 @php
   $visualisierungen = [
+    '/img/pappelstrasse-visualisierung-01',
+    '/img/pappelstrasse-visualisierung-02',
+    '/img/pappelstrasse-visualisierung-03',
+    '/img/pappelstrasse-visualisierung-wohnung-01',
+    '/img/pappelstrasse-visualisierung-wohnung-02',
+    '/img/pappelstrasse-visualisierung-wohnung-03',
+    '/img/pappelstrasse-visualisierung-wohnung-04',
+    '/img/pappelstrasse-visualisierung-wohnung-05',
     '/img/pappelstrasse-visualisierung-wohnen-essen',
     '/img/pappelstrasse-visualisierung-kueche',
     '/img/pappelstrasse-visualisierung-schlafzimmer',

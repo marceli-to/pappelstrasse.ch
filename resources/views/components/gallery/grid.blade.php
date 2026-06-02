@@ -3,7 +3,7 @@
   'images' => [],
 ])
 
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 md:gap-16 lg:gap-24" data-reveal-children>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 md:gap-16 lg:gap-24" data-reveal>
   @foreach($images as $index => $image)
     <a
       href="{{ $image }}.jpg"
