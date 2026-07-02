@@ -16,7 +16,7 @@
           Kontaktperson
         </x-headings.h3>
         <div class="text-xs xl:text-lg leading-[1.5]">
-          <strong>Chantal Bieri</strong><br>
+          <strong>Sabrina Werner</strong><br>
           <a 
             href="tel:0448787777" 
             class="text-white hover:text-white/80"
